@@ -1,0 +1,17 @@
+:root {
+  --font-family: "Inter";
+  --font-sans: sans-serif;
+  --color-bg: #fff;
+  --color-text: #111;
+  --container-max-inline-size: 1308px;
+  --container-inline-padding: 15px;
+
+  --Aquamarine-1: #45e1a7;
+  --Purple-Hearth: #6137cd;
+  --Black: #000;
+  --White: #fff;
+  --Onyx: #121212;
+  --Gray: rgba(0, 0, 0, 0.54);
+  --Light-Blur: rgba(234, 234, 234, 0.45);
+  --Gradient: linear-gradient(180deg, #cbbdf3 12.97%, #dcfde8 87.48%);
+}
