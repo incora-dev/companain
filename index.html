@@ -1170,8 +1170,6 @@
 
             feedbackCards.forEach(card => card.classList.remove('active_card'));
             feedbackCards[index]?.classList.add('active_card');
-
-            console.log(`Scroll to index: ${index}, translateX(${offset * -1}px)`);
         }
 
         function updateSlider() {
@@ -1231,16 +1229,6 @@
                         const translateY = progress * maxTranslate;
                         // Move list inside sticky container
                         list.style.transform = `translateY(-${translateY * 2.2}px)`;
-
-                        console.log({
-                            scrollY: window.scrollY,
-                            sectionTop,
-                            sectionHeight: section.offsetHeight,
-                            listScroll: list.scrollHeight,
-                            containerHeight: scrollable.clientHeight,
-                            translateY
-                        });
-
                         ticking = false;
                     });
 
