@@ -846,7 +846,7 @@
     </div>
 
     <script>
-         class PulsationButton extends HTMLElement {
+        class PulsationButton extends HTMLElement {
             constructor() {
                 super();
                 const shadow = this.attachShadow({
@@ -854,95 +854,95 @@
                 });
 
                 shadow.innerHTML = `
-                  <style>
-                    .pulsation_button {
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                    }
-        
-                    button {
-                      font-weight: 700;
-                      font-size: 32px;
-                      line-height: 100%;
-                      padding: 30px 40px;
-                      letter-spacing: 0;
-                      color: white;
-                      background-color: #6137CD;
-                      border-radius: 88px;
-                      position: relative;
-                      z-index: 3;
-                      border: none;
-                      cursor: pointer;
+                          <style>
+                            .pulsation_button {
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                            }
+                
+                            button {
+                              font-weight: 700;
+                              font-size: 32px;
+                              line-height: 100%;
+                              padding: 30px 40px;
+                              letter-spacing: 0;
+                              color: white;
+                              background-color: #6137CD;
+                              border-radius: 88px;
+                              position: relative;
+                              z-index: 3;
+                              border: none;
+                              cursor: pointer;
 
-                      transition: background-color 0.3s ease;
-                    }
+                              transition: background-color 0.3s ease;
+                            }
 
-                    button:hover {
-                      background-color: #4d2aa5;
-                    }
-        
-                    .pulsation_button__outer_border {
-                      position: relative;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      padding: 7px;
-                      border: 3px solid rgba(97, 55, 205, 0);
-                      border-radius: 88px;
-                      animation-duration: 3.5s;
-                      animation-timing-function: ease-in-out;
-                      animation-iteration-count: infinite;
-                      animation-fill-mode: both;
+                            button:hover {
+                              background-color: #4d2aa5;
+                            }
+                
+                            .pulsation_button__outer_border {
+                              position: relative;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              padding: 7px;
+                              border: 3px solid rgba(97, 55, 205, 0);
+                              border-radius: 88px;
+                              animation-duration: 3.5s;
+                              animation-timing-function: ease-in-out;
+                              animation-iteration-count: infinite;
+                              animation-fill-mode: both;
 
-                      z-index: 1;
-                    }
-        
-                    .outer_border_layer_1 {
-                      animation-name: step-1;
-                    }
-                    .outer_border_layer_2 {
-                      animation-name: step-2;
-                    }
-                    .outer_border_layer_3 {
-                      animation-name: step-3;
-                    }
-                    .outer_border_layer_4 {
-                      animation-name: step-4;
-                    }
-        
-                    @keyframes step-1 {
-                      20%, 100% { border-color: rgba(97, 55, 205, 0); }
-                      20% { border-color: rgba(97, 55, 205, 0.8); }
-                    }
-                    @keyframes step-2 {
-                      40%, 100% { border-color: rgba(97, 55, 205, 0); }
-                      40% { border-color: rgba(97, 55, 205, 0.6); }
-                    }
-                    @keyframes step-3 {
-                      60%, 100% { border-color: rgba(97, 55, 205, 0); }
-                      60% { border-color: rgba(97, 55, 205, 0.4); }
-                    }
-                    @keyframes step-4 {
-                      80%, 100% { border-color: rgba(97, 55, 205, 0); }
-                      80% { border-color: rgba(97, 55, 205, 0.1); }
-                      80%, 90% { border-color: rgba(97, 55, 205, 0.2); }
-                      90%, 100% { border-color: rgba(97, 55, 205, 0); }
-                    }
-                  </style>
-        
-                  <div class="pulsation_button">
-                    <div class="pulsation_button__outer_border outer_border_layer_4">
-                      <div class="pulsation_button__outer_border outer_border_layer_3">
-                        <div class="pulsation_button__outer_border outer_border_layer_2">
-                          <div class="pulsation_button__outer_border outer_border_layer_1">
-                            <button><slot>Click Me</slot></button>
+                              z-index: 1;
+                            }
+                
+                            .outer_border_layer_1 {
+                              animation-name: step-1;
+                            }
+                            .outer_border_layer_2 {
+                              animation-name: step-2;
+                            }
+                            .outer_border_layer_3 {
+                              animation-name: step-3;
+                            }
+                            .outer_border_layer_4 {
+                              animation-name: step-4;
+                            }
+                
+                            @keyframes step-1 {
+                              20%, 100% { border-color: rgba(97, 55, 205, 0); }
+                              20% { border-color: rgba(97, 55, 205, 0.8); }
+                            }
+                            @keyframes step-2 {
+                              40%, 100% { border-color: rgba(97, 55, 205, 0); }
+                              40% { border-color: rgba(97, 55, 205, 0.6); }
+                            }
+                            @keyframes step-3 {
+                              60%, 100% { border-color: rgba(97, 55, 205, 0); }
+                              60% { border-color: rgba(97, 55, 205, 0.4); }
+                            }
+                            @keyframes step-4 {
+                              80%, 100% { border-color: rgba(97, 55, 205, 0); }
+                              80% { border-color: rgba(97, 55, 205, 0.1); }
+                              80%, 90% { border-color: rgba(97, 55, 205, 0.2); }
+                              90%, 100% { border-color: rgba(97, 55, 205, 0); }
+                            }
+                          </style>
+                
+                          <div class="pulsation_button">
+                            <div class="pulsation_button__outer_border outer_border_layer_4">
+                              <div class="pulsation_button__outer_border outer_border_layer_3">
+                                <div class="pulsation_button__outer_border outer_border_layer_2">
+                                  <div class="pulsation_button__outer_border outer_border_layer_1">
+                                    <button><slot>Click Me</slot></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                `;
+                        `;
             }
 
             connectedCallback() {
@@ -1199,13 +1199,55 @@
             });
         }
 
-        // Navigation
         prevBtn.addEventListener('click', handlePrev);
         nextBtn.addEventListener('click', handleNext);
 
-        // Initialize
         renderFeedbackCards(feedbacks)
         updateSlider();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const section = document.querySelector('.footsteps_section');
+            const stickyContainer = document.querySelector('.footsteps_section__container');
+            const scrollable = document.querySelector('.footsteps_scrolling_section_middle');
+            const list = document.querySelector('.footsteps_scrolling_section_list');
+            const items = document.querySelectorAll('.footsteps_scrolling_section_item');
+
+            const itemScrollDurationVH = 100;
+            const totalScrollVH = items.length * itemScrollDurationVH;
+
+            section.style.height = `${totalScrollVH}vh`;
+
+            const maxTranslate = list.scrollHeight - scrollable.clientHeight;
+
+            let ticking = false;
+
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        const sectionTop = section.offsetTop;
+                        const scrollY = window.scrollY;
+                        const scrollProgressRaw = (scrollY - sectionTop + 1) / (section.offsetHeight - window.innerHeight);
+                        const progress = Math.min(1, Math.max(0, scrollProgressRaw));
+                        const translateY = progress * maxTranslate;
+                        // Move list inside sticky container
+                        list.style.transform = `translateY(-${translateY * 2.2}px)`;
+
+                        console.log({
+                            scrollY: window.scrollY,
+                            sectionTop,
+                            sectionHeight: section.offsetHeight,
+                            listScroll: list.scrollHeight,
+                            containerHeight: scrollable.clientHeight,
+                            translateY
+                        });
+
+                        ticking = false;
+                    });
+
+                    ticking = true;
+                }
+            });
+        });
     </script>
   </body>
 </html>
