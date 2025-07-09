@@ -11,3 +11,18 @@
     </filter>
   </defs>
 </svg>
+<!-- 
+<svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" width="480" height="480">
+  <defs>
+    <filter id="blurFilter" x="-100%" y="-100%" width="400%" height="400%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
+    </filter>
+  </defs>
+
+  <g filter="url(#blurFilter)" transform="translate(40, 40) scale(0.83)">
+    <path
+      fill="#6137CD"
+      d="M416.5,309.5Q406,379,338,395Q270,411,219,388Q168,365,100.5,340Q33,315,24.5,236.5Q16,158,76.5,109.5Q137,61,202,74.5Q267,88,344.5,87.5Q422,87,424.5,163.5Q427,240,416.5,309.5Z"
+    />
+  </g>
+</svg> -->
