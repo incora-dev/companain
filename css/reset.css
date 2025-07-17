@@ -54,3 +54,7 @@ html,
 body {
   block-size: 100%;
 }
+
+b {
+  font-weight: 600;
+}

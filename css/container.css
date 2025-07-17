@@ -1,0 +1,43 @@
+@import url("../components/header.css");
+@import url("../components/footer.css");
+@import url("../components/FAQ_section.css");
+@import url("../components/gettingStarted.css");
+@import url("../css/variables.css");
+
+body {
+  font-family: var(--font-family), var(--font-sans);
+  font-size: 18px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+@media (max-width: 767.98px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-inline-size: calc(
+    var(--container-max-inline-size) + var(--container-inline-padding) * 2
+  );
+  margin-inline: auto;
+  padding-inline: var(--container-inline-padding);
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -98.5px;
+}

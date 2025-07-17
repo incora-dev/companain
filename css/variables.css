@@ -7,12 +7,19 @@
   --container-inline-padding: 15px;
 
   --Aquamarine: #45e1a7;
+  --Aquamarine-60: rgba(69, 225, 167, 0.6);
   --Purple-Hearth: #6137cd;
   --Black: #000;
   --White: #fff;
+  --White-50: rgba(255, 255, 255, 0.5);
   --Onyx: #121212;
   --Gray: rgba(0, 0, 0, 0.54);
   --Light-Blur: rgba(234, 234, 234, 0.45);
   --Light-Gray: rgba(0, 0, 0, 0.24);
   --Gradient: linear-gradient(180deg, #cbbdf3 12.97%, #dcfde8 87.48%);
+  --Who-We-Serve-Gradient: linear-gradient(
+    109deg,
+    #cbbdf3 16.78%,
+    #dcfde8 83.35%
+  );
 }
