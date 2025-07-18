@@ -153,275 +153,483 @@
         <section class="control_tabs">
           <div class="control_tabs__container">
             <div class="control_tabs_body">
-              <div class="control_tab_item active">Pet Owners</div>
-              <div class="control_tab_item">Veterinarians</div>
+              <div class="control_tab_item active" data-tab="owners">
+                Pet Owners
+              </div>
+              <div class="control_tab_item" data-tab="vets">Veterinarians</div>
             </div>
           </div>
         </section>
 
-        <section class="for_pet_parents">
-          <div class="for_pet_parents__container">
-            <div class="for_pet_parents_body">
-              <div class="for_pet_info">
-                <div class="for_pet_info_title">
-                  we serve the pet parents who
+        <!-- owners tab content below -->
+        <div class="control_tab_content active" id="owners">
+          <section class="for_pet_parents">
+            <div class="for_pet_parents__container">
+              <div class="for_pet_parents_body">
+                <div class="for_pet_info">
+                  <div class="for_pet_info_title">
+                    we serve the pet parents who
+                  </div>
+                  <div class="for_pet_info_subtitle">
+                    At CompanAIn, we serve the pet parents who don’t settle for
+                    “wait and see.”
+                  </div>
                 </div>
-                <div class="for_pet_info_subtitle">
-                  At CompanAIn, we serve the pet parents who don’t settle for
-                  “wait and see.”
-                </div>
-              </div>
-              <div class="for_parent_body_slider_wrapper">
-                <img
-                  id="arrow_up"
-                  alt="arrow"
-                  src="../../assets/whoWeServe/arrow_bottom.svg"
-                />
-                <div class="for_parent_body_slider_title">
-                  These are the people we build for.
-                </div>
-                <div class="for_parent_body_slider">
+                <div class="for_parent_body_slider_wrapper">
+                  <img
+                    id="arrow_up"
+                    alt="arrow"
+                    src="../../assets/whoWeServe/arrow_bottom.svg"
+                  />
+                  <div class="for_parent_body_slider_title">
+                    These are the people we build for.
+                  </div>
                   <div
-                    id="for_parent_slider_track"
-                    class="for_parent_body_slider_track"
+                    id="for_parent_body_slider"
+                    class="for_parent_body_slider"
                   >
-                    <div class="for_parent_body_slider_item">
-                      <div class="for_parent_body_slider_item_q">
-                        We serve the ones who notice the subtle changes—the
-                        extra nap, the missed meal, the shift in energy—and ask:
-                      </div>
-                      <div class="for_parent_body_slider_item_a">
-                        “Is something wrong? Should I be worried?”
-                      </div>
-                    </div>
-
-                    <div class="for_parent_body_slider_item">
-                      <div class="for_parent_body_slider_item_q">
-                        We serve the pet owners who love deeply and think
-                        critically.
-                      </div>
-                    </div>
-
-                    <div class="for_parent_body_slider_item">
-                      <div class="for_parent_body_slider_item_q">
-                        Those who want answers—not endless Googling.
-                      </div>
-                    </div>
-
-                    <div class="for_parent_body_slider_item">
-                      <div class="for_parent_body_slider_item_q">
-                        Those who believe their dog, cat, or companion animal
-                        deserves not only love, but longevity.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  id="arrow_down"
-                  alt="arrow"
-                  src="../../assets/whoWeServe/arrow_bottom.svg"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="care_with_insight">
-          <div class="care_with_insight__container">
-            <div class="care_with_insight_body">
-              <div class="care_with_insight_title">Care With Insight</div>
-              <div class="care_with_insight_content">
-                <div class="care_info_section">
-                  <div class="care_info_section_title">
-                    Our community is made up of curious, compassionate pet
-                    owners—<b
-                      >people who want to understand what’s going on inside
-                      their pet’s body before it becomes a crisis.</b
+                    <div
+                      id="for_parent_slider_track"
+                      class="for_parent_body_slider_track"
                     >
+                      <div class="for_parent_body_slider_item">
+                        <div class="for_parent_body_slider_item_q">
+                          We serve the ones who notice the subtle changes—the
+                          extra nap, the missed meal, the shift in energy—and
+                          ask:
+                        </div>
+                        <div class="for_parent_body_slider_item_a">
+                          “Is something wrong? Should I be worried?”
+                        </div>
+                      </div>
+
+                      <div class="for_parent_body_slider_item">
+                        <div class="for_parent_body_slider_item_q">
+                          We serve the pet owners who love deeply and think
+                          critically.
+                        </div>
+                      </div>
+
+                      <div class="for_parent_body_slider_item">
+                        <div class="for_parent_body_slider_item_q">
+                          Those who want answers—not endless Googling.
+                        </div>
+                      </div>
+
+                      <div class="for_parent_body_slider_item">
+                        <div class="for_parent_body_slider_item_q">
+                          Those who believe their dog, cat, or companion animal
+                          deserves not only love, but longevity.
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="care_info_section_asking">
-                    <b
-                      >They don’t just want to react to illness; they want to
-                      prevent it.</b
-                    >
-                    <br />
-                    <br />
-                    <b>They’re the ones asking:</b>
-                  </div>
-                  <div class="care_info_section_arrow">
-                    <img
-                      class="answer_arrow"
-                      alt="arrow"
-                      src="../../assets/whoWeServe/answers_arrow.svg"
-                    />
-                    <br />
-                    <b
-                      >We give them the tools to ask better questions and find
-                      smarter answers.</b
-                    >
-                  </div>
+                  <img
+                    id="arrow_down"
+                    alt="arrow"
+                    src="../../assets/whoWeServe/arrow_bottom.svg"
+                  />
                 </div>
-                <div class="care_cards_section">
-                  <div class="question_card">
-                    <div class="question_card_text">
-                      Is this new behavior normal—or a sign of something deeper?
+              </div>
+            </div>
+          </section>
+
+          <section class="care_with_insight">
+            <div class="care_with_insight__container">
+              <div class="care_with_insight_body">
+                <div class="care_with_insight_title">Care With Insight</div>
+                <div class="care_with_insight_content">
+                  <div class="care_info_section">
+                    <div class="care_info_section_title">
+                      Our community is made up of curious, compassionate pet
+                      owners—<b
+                        >people who want to understand what’s going on inside
+                        their pet’s body before it becomes a crisis.</b
+                      >
                     </div>
-                    <div class="question_card_date">12:10 AM</div>
+                    <div class="care_info_section_asking">
+                      <b
+                        >They don’t just want to react to illness; they want to
+                        prevent it.</b
+                      >
+                      <br />
+                      <br />
+                      <b>They’re the ones asking:</b>
+                    </div>
+                    <div class="care_info_section_arrow">
+                      <img
+                        class="answer_arrow"
+                        alt="arrow"
+                        src="../../assets/whoWeServe/answers_arrow.svg"
+                      />
+                      <br />
+                      <b
+                        >We give them the tools to ask better questions and find
+                        smarter answers.</b
+                      >
+                    </div>
                   </div>
-                  <div class="question_card">
-                    <div class="question_card_text">
-                      Based on my puppy's breed, what are things I need to look
-                      out for in the future?
+                  <div class="care_cards_section">
+                    <div class="question_card">
+                      <div class="question_card_text">
+                        Is this new behavior normal—or a sign of something
+                        deeper?
+                      </div>
+                      <div class="question_card_date">12:10 AM</div>
                     </div>
-                    <div class="question_card_date">10:10 AM</div>
-                  </div>
-                  <div class="question_card">
-                    <div class="question_card_text">
-                      What does this blood test really mean?
+                    <div class="question_card">
+                      <div class="question_card_text">
+                        Based on my puppy's breed, what are things I need to
+                        look out for in the future?
+                      </div>
+                      <div class="question_card_date">10:10 AM</div>
                     </div>
-                    <div class="question_card_date">08:55 PM</div>
-                  </div>
-                  <div class="question_card">
-                    <div class="question_card_text">
-                      How can I proactively support my pet’s health every day?
+                    <div class="question_card">
+                      <div class="question_card_text">
+                        What does this blood test really mean?
+                      </div>
+                      <div class="question_card_date">08:55 PM</div>
                     </div>
-                    <div class="question_card_date">06:32 PM</div>
+                    <div class="question_card">
+                      <div class="question_card_text">
+                        How can I proactively support my pet’s health every day?
+                      </div>
+                      <div class="question_card_date">06:32 PM</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="pet_owner_section">
-          <div class="pet_owner__container">
-            <div class="pet_owner_body">
-              <div
-                style="grid-area: pet_owner_info_block_1"
-                class="pet_owner_info_block"
-              >
-                <div class="pet_owner_info_block_title">
-                  Your Partner in Care
-                </div>
-                <div class="pet_owner_info_block_title_info">
-                  CompanAIn is positioned at the forefront of the
-                  <b>humanization of pet health, AI, and personalized care</b>
-                  as the gold standard for
-                  <b>longevity-focused pet wellness.</b> Live Longer, Love More.
-                </div>
-              </div>
-              <div
-                style="grid-area: pet_owner_info_block_2"
-                class="pet_owner_info_icon_block"
-              >
-                <img
-                  src="../../assets/whoWeServe/pew_owner_section/magnifier.svg"
-                  alt="magnifier"
-                />
-                <div class="pet_owner_info_icon_block_title">
-                  Data to insights
-                </div>
-                <div class="pet_owner_info_icon_block_info">
-                  A central hub housing your pet's medical history and data-
-                  Ready to be shared at a moment's notice
-                </div>
-              </div>
-              <div
-                style="grid-area: pet_owner_info_block_3"
-                class="pet_owner_info_icon_block"
-              >
-                <img
-                  src="../../assets/whoWeServe/pew_owner_section/darts.svg"
-                  alt="darts"
-                />
-                <div class="pet_owner_info_icon_block_title">
-                  Personalized Care Recommendations
-                </div>
-                <div class="pet_owner_info_icon_block_info">
-                  Specific to your pet's current health state in context of its
-                  medical history and future needs
-                </div>
-              </div>
-              <div
-                style="grid-area: pet_owner_info_block_4"
-                class="pet_owner_info_icon_block"
-              >
-                <img
-                  src="../../assets/whoWeServe/pew_owner_section/puzzle.svg"
-                  alt="puzzle"
-                />
-                <div class="pet_owner_info_icon_block_title">
-                  Connecting the Dots
-                </div>
-                <div class="pet_owner_info_icon_block_info">
-                  Interpreting every piece of your pet's information to uncover
-                  the full picture
-                </div>
-              </div>
-              <div
-                style="grid-area: pet_owner_info_block_5"
-                class="pet_owner_info_icon_block"
-              >
-                <img
-                  src="../../assets/whoWeServe/pew_owner_section/watch.svg"
-                  alt="watch"
-                />
-                <div class="pet_owner_info_icon_block_title">
-                  Real-Time Pet Health Guidance
-                </div>
-                <div class="pet_owner_info_icon_block_info">
-                  Instant guidance with CompanAIn by understanding your pet's
-                  full health journey
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="the_result">
-          <div class="the_result__container">
-            <div class="the_result_body">
-              <div class="the_result_body_title">Why It Matters</div>
-              <div class="the_result_body_content">
-                <div class="the_result_body_content_item">
-                  <div class="the_result_body_content_item_title">
-                    Complete Health Care Story
+          <section class="pet_owner_section">
+            <div class="pet_owner__container">
+              <div class="pet_owner_body">
+                <div
+                  style="grid-area: pet_owner_info_block_1"
+                  class="pet_owner_info_block"
+                >
+                  <div class="pet_owner_info_block_title">
+                    Your Partner in Care
                   </div>
-                  <div class="the_result_body_content_item_info">
-                    All your pet’s health data organized in one clear,
-                    easy-to-read timeline.
+                  <div class="pet_owner_info_block_title_info">
+                    CompanAIn is positioned at the forefront of the
+                    <b>humanization of pet health, AI, and personalized care</b>
+                    as the gold standard for
+                    <b>longevity-focused pet wellness.</b> Live Longer, Love
+                    More.
                   </div>
                 </div>
-                <div class="the_result_body_content_item">
-                  <div class="the_result_body_content_item_title">
-                    Proactive Peace of Mind
+                <div
+                  style="grid-area: pet_owner_info_block_2"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/magnifier.svg"
+                    alt="magnifier"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Data to insights
                   </div>
-                  <div class="the_result_body_content_item_info">
-                    Spot trends early before minor issues become major vet
-                    visits.
+                  <div class="pet_owner_info_icon_block_info">
+                    A central hub housing your pet's medical history and data-
+                    Ready to be shared at a moment's notice
                   </div>
                 </div>
-                <div class="the_result_body_content_item">
-                  <div class="the_result_body_content_item_title">
-                    Truly Personalized Care
+                <div
+                  style="grid-area: pet_owner_info_block_3"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/darts.svg"
+                    alt="darts"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Personalized Care Recommendations
                   </div>
-                  <div class="the_result_body_content_item_info">
-                    Tailored care tips tuned to your pet’s unique needs.
+                  <div class="pet_owner_info_icon_block_info">
+                    Specific to your pet's current health state in context of
+                    its medical history and future needs
                   </div>
                 </div>
-                <div class="the_result_body_content_item">
-                  <div class="the_result_body_content_item_title">
-                    Stronger Vet Partnership
+                <div
+                  style="grid-area: pet_owner_info_block_4"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/puzzle.svg"
+                    alt="puzzle"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Connecting the Dots
                   </div>
-                  <div class="the_result_body_content_item_info">
-                    Share insights and records for faster, smarter vet care.
+                  <div class="pet_owner_info_icon_block_info">
+                    Interpreting every piece of your pet's information to
+                    uncover the full picture
+                  </div>
+                </div>
+                <div
+                  style="grid-area: pet_owner_info_block_5"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/watch.svg"
+                    alt="watch"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Real-Time Pet Health Guidance
+                  </div>
+                  <div class="pet_owner_info_icon_block_info">
+                    Instant guidance with CompanAIn by understanding your pet's
+                    full health journey
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
+          <section class="the_result">
+            <div class="the_result__container">
+              <div class="the_result_body">
+                <div class="the_result_body_title">Why It Matters</div>
+                <div class="the_result_body_content">
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Complete Health Care Story
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      All your pet’s health data organized in one clear,
+                      easy-to-read timeline.
+                    </div>
+                  </div>
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Proactive Peace of Mind
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      Spot trends early before minor issues become major vet
+                      visits.
+                    </div>
+                  </div>
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Truly Personalized Care
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      Tailored care tips tuned to your pet’s unique needs.
+                    </div>
+                  </div>
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Stronger Vet Partnership
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      Share insights and records for faster, smarter vet care.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- vets tab content below -->
+
+        <div class="control_tab_content" id="vets">
+          <section class="pet_owner_section">
+            <div class="pet_owner__container">
+              <div class="pet_owner_body">
+                <div
+                  style="grid-area: pet_owner_info_block_1"
+                  class="pet_owner_info_block purple"
+                >
+                  <div class="pet_owner_info_block_pre_title">
+                    We <b>Don’t Replace</b> the Veterinarian.
+                  </div>
+                  <div class="pet_owner_info_block_title">
+                    Your Partner in Care
+                  </div>
+                  <div class="pet_owner_info_block_title_info">
+                    CompanAIn is positioned at the forefront of the
+                    <b>humanization of pet health, AI, and personalized care</b>
+                    as the gold standard for
+                    <b>longevity-focused pet wellness.</b> Live Longer, Love
+                    More.
+                  </div>
+                </div>
+                <div
+                  style="grid-area: pet_owner_info_block_2"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/flask.svg"
+                    alt="flask"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Real-Time Lab Interpretation
+                  </div>
+                  <div class="pet_owner_info_icon_block_info">
+                    Interpreting hematology, clinical pathology, and health
+                    records instantly.
+                  </div>
+                </div>
+                <div
+                  style="grid-area: pet_owner_info_block_3"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/warning.svg"
+                    alt="warning.svg"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Early-Warning Alerts
+                  </div>
+                  <div class="pet_owner_info_icon_block_info">
+                    Flagging subtle changes and early signs before they
+                    escalate.
+                  </div>
+                </div>
+                <div
+                  style="grid-area: pet_owner_info_block_4"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/magnifier.svg"
+                    alt="magnifier"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Clear Explanations
+                  </div>
+                  <div class="pet_owner_info_icon_block_info">
+                    Delivering clear, plain-language explanations to keep
+                    clients informed.
+                  </div>
+                </div>
+                <div
+                  style="grid-area: pet_owner_info_block_5"
+                  class="pet_owner_info_icon_block"
+                >
+                  <img
+                    src="../../assets/whoWeServe/pew_owner_section/chat.svg"
+                    alt="chat.svg"
+                  />
+                  <div class="pet_owner_info_icon_block_title">
+                    Client-Friendly Summaries
+                  </div>
+                  <div class="pet_owner_info_icon_block_info">
+                    Optimized Workflow — Stay one step ahead with your patient’s
+                    digital health timeline.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="vets_focused_on_medicine">
+            <div class="vets_focused_on_medicine__container">
+              <div class="vets_focused_on_medicine_body">
+                <div class="vets_focused_on_medicine_body_info">
+                  <div class="vets_focused_on_medicine_body_info_title">
+                    For Vets Focused on Medicine
+                  </div>
+                  <div class="vets_focused_on_medicine_body_info_description">
+                    CompanAIn streamlines clinical workflows through AI powered
+                    insights & automated data interpretation so you can focus on
+                    patient care.
+                  </div>
+                  <div class="vets_focused_on_medicine_body_info_description">
+                    At CompanAIn, we’re here for you.
+                  </div>
+                </div>
+
+                <div class="vets_focused_on_medicine_accordion">
+                  <div class="vets_focused_on_medicine_accordion_item">
+                    <button class="vets_focused_on_medicine_accordion_header">
+                      Digital Health Timeline
+                    </button>
+                    <div class="vets_focused_on_medicine_accordion_content">
+                      <p>
+                        Seamless viewing of important historical events in a
+                        patient's health journey
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="vets_focused_on_medicine_accordion_item">
+                    <button class="vets_focused_on_medicine_accordion_header">
+                      Trend Detection
+                    </button>
+                    <div class="vets_focused_on_medicine_accordion_content">
+                      <p>
+                        Pick up on the subtle changes year over year that may
+                        have gone unnoticed — Practice proactively
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="vets_focused_on_medicine_accordion_item">
+                    <button class="vets_focused_on_medicine_accordion_header">
+                      AI Generated Summaries
+                    </button>
+                    <div class="vets_focused_on_medicine_accordion_content">
+                      <p>
+                        Concise personalized summary that gets you up to speed
+                        on a patient in seconds, not minutes, not hours. Feel as
+                        if you’ve known this patient their entire life on their
+                        first visit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="the_result">
+            <div class="the_result__container">
+              <div class="the_result_body">
+                <div class="the_result_body_title">The result?</div>
+                <div class="the_result_body_content">
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Comprehensive Health Timelines
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      Smarter diagnostics start with complete records and
+                      AI-driven insights..
+                    </div>
+                  </div>
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Streamlined Workflows
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      Simplify daily tasks and spend more time delivering care.
+                    </div>
+                  </div>
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Stronger Bonds & Better Outcomes
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      Deliver personalized care that builds trust and keeps pets
+                      healthier.
+                    </div>
+                  </div>
+                  <div class="the_result_body_content_item">
+                    <div class="the_result_body_content_item_title">
+                      Fulfillment in Practice
+                    </div>
+                    <div class="the_result_body_content_item_info">
+                      AI-powered clarity for better care and more meaningful
+                      impact.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <!-- already done below -->
 
         <section class="cta_section">
@@ -643,11 +851,35 @@
     </div>
   </body>
   <script>
+    function controlTabsHandler() {
+      const tabButtons = document.querySelectorAll(".control_tab_item");
+      const tabContents = document.querySelectorAll(".control_tab_content");
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          button.classList.add("active");
+          const tabId = button.getAttribute("data-tab");
+          document.getElementById(tabId).classList.add("active");
+        });
+      });
+    }
+
     function forParentSectionSlider() {
       const arrowUp = document.getElementById("arrow_up");
       const arrowDown = document.getElementById("arrow_down");
       const answers = document.querySelectorAll(".for_parent_body_slider_item");
+      const sliderTrackWrapper = document.getElementById(
+        "for_parent_body_slider"
+      );
       const sliderTrack = document.getElementById("for_parent_slider_track");
+      const firstSliderElementHeight = answers?.[0].offsetHeight;
+
+      sliderTrackWrapper.style.height = firstSliderElementHeight + "px";
+
+      console.log({ firstSliderElementHeight });
 
       let currentIndex = 0;
       const maxIndex = answers.length - 1;
@@ -662,7 +894,11 @@
         const targetTop = target.offsetTop;
         const targetHeight = target.offsetHeight;
 
-        sliderTrack.style.paddingTop = `${parseInt(containerHeight / 3)}px`;
+        // sliderTrack.style.paddingTop = `${parseInt(containerHeight / 3)}px`;
+
+        const viewportHeight = window.innerHeight;
+        const paddingTop = Math.min(viewportHeight * 0.11, 77);
+        sliderTrack.style.paddingTop = `${parseInt(paddingTop)}px`;
 
         const scrollOffset = targetTop - containerHeight / 2 + targetHeight / 2;
         sliderTrack.style.transform = `translateY(-${scrollOffset}px)`;
@@ -699,6 +935,80 @@
       scrollToCard(currentIndex);
     }
 
+    function focusedOnMedicineAccordion() {
+      const section = document.querySelector(
+        ".vets_focused_on_medicine_accordion"
+      );
+      const headers = document.querySelectorAll(
+        ".vets_focused_on_medicine_accordion_header"
+      );
+
+      if (!headers.length) return;
+
+      let currentIndex = 1;
+      let currentInterval = null;
+
+      // const firstHeader = headers[0];
+      // const firstContent = firstHeader?.nextElementSibling;
+      // if (firstHeader && firstContent) {
+      //   requestAnimationFrame(() => {
+      //     firstHeader.classList.add("active");
+      //     const contentHeight = firstContent.scrollHeight;
+      //     firstContent.style.maxHeight = `${contentHeight + 10}px`;
+      //     firstContent.style.paddingTop = "10px";
+      //     firstContent.style.paddingBottom = "10px";
+      //   });
+      // }
+
+      function startInterval() {
+        currentInterval = setInterval(() => {
+          headers.forEach((h) => {
+            h.classList.remove("active");
+            const content = h.nextElementSibling;
+            if (content) {
+              content.style.maxHeight = null;
+              content.style.paddingTop = 0;
+              content.style.paddingBottom = 0;
+            }
+          });
+
+          const header = headers[currentIndex];
+          const content = header?.nextElementSibling;
+          if (header && content) {
+            header.classList.add("active");
+            const contentHeight = content.scrollHeight;
+            content.style.maxHeight = `${contentHeight + 10}px`;
+            content.style.paddingTop = "10px";
+            content.style.paddingBottom = "10px";
+          }
+
+          currentIndex = (currentIndex + 1) % headers.length;
+        }, 2000);
+      }
+
+      function stopInterval() {
+        clearInterval(currentInterval);
+        currentInterval = null;
+        currentIndex = 0;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          console.log(entries, section);
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              startInterval();
+            } else {
+              stopInterval();
+            }
+          });
+        },
+        { threshold: 0.45 }
+      );
+
+      observer.observe(section);
+    }
+
     function faqAccordions() {
       const headers = document.querySelectorAll(".faq_accordion_header");
 
@@ -724,7 +1034,9 @@
       });
     }
 
+    controlTabsHandler();
     forParentSectionSlider();
+    focusedOnMedicineAccordion();
     faqAccordions();
   </script>
 </html>

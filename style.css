@@ -14,7 +14,7 @@
   margin-top: -116px;
 }
 
-.hero-title__container {
+.hero_title__container {
   position: relative;
   z-index: 1;
   max-inline-size: 1450px;
@@ -260,6 +260,13 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 1000px) {
+  .logo_animation__container {
+    padding-block: 25px;
+  }
+}
+
 /* ======================================================================================================================================================== */
 .keep_tracking {
   padding-top: 50px;
@@ -271,7 +278,6 @@
   justify-content: space-between;
   align-items: center;
 
-  /* gap: 115px; */
   gap: 8vw;
 }
 
@@ -329,6 +335,20 @@
   position: absolute;
   bottom: 140px;
   right: -50px;
+}
+
+@media (max-width: 1000px) {
+  .keep_tracking__body {
+    gap: 25px;
+    flex-direction: column;
+  }
+  .keep_tracking_info_title,
+  .keep_tracking_info_description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 770px) {
 }
 
 /* ======================================================================================================================================================== */
@@ -474,6 +494,19 @@
   right: -200px;
   top: -150px;
 }
+
+@media (max-width: 1000px) {
+  .about_animal_health_body {
+    flex-direction: column-reverse;
+  }
+
+  .about_animal_health_info_description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 770px) {
+}
 /* ======================================================================================================================================================== */
 .smart_pet_care {
   position: relative;
@@ -508,6 +541,8 @@
 .smart_pet_body {
   display: flex;
   justify-content: space-between;
+
+  position: relative;
 }
 
 .smart_pet_body_info {
@@ -596,6 +631,42 @@
 
   max-height: 0;
   overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .smart_pet_body {
+    padding-top: 50px;
+  }
+  .smart_pet_info_title {
+    position: absolute;
+
+    top: -150px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .smart_pet_body_info {
+    width: 50%;
+  }
+
+  .smart_pet_info_title {
+    font-size: 70px;
+    line-height: 62px;
+  }
+
+  .smart_pet_body_image {
+    align-items: center;
+    width: 50%;
+  }
+
+  .smart_pet_body_image > img {
+    height: 85%;
+  }
+}
+
+@media (max-width: 770px) {
 }
 
 /* ======================================================================================================================================================== */
@@ -767,6 +838,30 @@
 .proactive_info_section > b {
   color: var(--Black);
 }
+
+@media (max-width: 1000px) {
+  .proactive_care_body {
+    padding-block: 75px;
+    flex-direction: column;
+  }
+
+  .proactive_steps_section {
+    flex-direction: column-reverse;
+  }
+
+  .proactive_steps_section,
+  .proactive_info_section {
+    width: 100%;
+    align-items: center;
+  }
+
+  .proactive_info_section {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 770px) {
+}
 /* ======================================================================================================================================================== */
 
 .raising_standart {
@@ -815,8 +910,7 @@
 
   display: inline-block;
   width: 100%;
-  text-align: justify;
-  text-align-last: justify;
+  text-align: center;
 
   position: relative;
 
@@ -841,6 +935,16 @@
   height: auto;
   max-width: 100%;
   display: block;
+}
+
+@media (max-width: 1000px) {
+  .raising_standart_title {
+    font-size: 90px;
+    top: 45px;
+  }
+}
+
+@media (max-width: 770px) {
 }
 
 /* ======================================================================================================================================================== */
@@ -979,16 +1083,34 @@
 .coming_soon_feature_description_info > b {
   color: var(--Onyx);
 }
+
+@media (max-width: 1000px) {
+  .coming_soon_title_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .coming_soon_title,
+  .coming_soon_subtitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .coming_soon_content_section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+}
 /* ======================================================================================================================================================== */
 .footsteps_section {
   position: relative;
-
-  /* height: 300vh; */
 }
 
 .footsteps_section__container {
   position: sticky;
-  /* top: 40px; */
   top: calc(30% - 250px);
 
   z-index: 1;
@@ -1065,18 +1187,6 @@
 }
 
 .footsteps_scrolling_section_middle {
-  /* flex-grow: 1;
-
-  height: 430px;
-
-  padding: 75px 30px;
-  overflow: hidden; */
-
-  /* overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth; */
-
   position: relative;
   height: 430px;
   overflow: hidden;
@@ -1087,15 +1197,6 @@
 }
 
 .footsteps_scrolling_section_list {
-  /* list-style: decimal;
-  list-style-position: outside;
-
-  padding-left: 1.5rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 50px; */
-
   list-style: decimal;
   list-style-position: outside;
   padding-left: 1.5rem;
@@ -1198,6 +1299,23 @@
   top: 0;
   left: 0;
 }
+
+@media (max-width: 1000px) {
+  /* .footsteps_section__container {
+    top: calc(30% - 300px);
+  } */
+
+  .footsteps_section__container {
+    top: calc(30% - 175px);
+  }
+
+  .footsteps_card_section {
+    padding: 150px 30px;
+  }
+}
+
+@media (max-width: 770px) {
+}
 /* ======================================================================================================================================================== */
 .use_cases {
   background: var(--Purple-Hearth);
@@ -1220,7 +1338,7 @@
 
   /* text-align: center; */
 
-  font-size: clamp(65px, 178px, 156px);
+  font-size: clamp(65px, 156px, 178px);
   font-style: normal;
   font-weight: 600;
   line-height: 180px;
@@ -1295,6 +1413,18 @@
   line-height: 24px;
 }
 
+@media (max-width: 1000px) {
+  .use_case_title {
+    /* font-size: 64px; */
+  }
+
+  .use_cases_content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 770px) {
+}
 /* ======================================================================================================================================================== */
 .gallery_section {
   position: relative;
