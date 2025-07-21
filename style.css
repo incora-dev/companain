@@ -951,7 +951,7 @@
 .coming_soon_right_blur,
 .coming_soon_left_blur {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 
   pointer-events: none;
 }

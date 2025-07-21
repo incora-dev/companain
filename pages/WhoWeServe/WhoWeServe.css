@@ -7,6 +7,8 @@
 .cover {
   background: var(--Who-We-Serve-Gradient);
   padding-top: 82px;
+
+  overflow: clip;
 }
 
 .cover__container {
@@ -49,11 +51,16 @@
 .cover_dna_bg {
   position: absolute;
   z-index: 2;
-
+  /* 
   top: -242px;
-  right: -67px;
+  right: -67px; */
 
   pointer-events: none;
+
+  width: 100%;
+  transform: rotate(17deg);
+  top: -675px;
+  right: -67px;
 }
 
 .cover_body_animal_item {
@@ -126,6 +133,61 @@
 }
 
 /* ======================================================================================================================================================== */
+.control_tabs__container {
+  position: relative;
+}
+
+.control_tabs_blur_left_1,
+.control_tabs_blur_left_2,
+.control_tabs_blur_left_3,
+.control_tabs_blur_left_4,
+.control_tabs_blur_right_1,
+.control_tabs_blur_right_2,
+.control_tabs_blur_right_3,
+.control_tabs_blur_right_4 {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.control_tabs_blur_right_1,
+.control_tabs_blur_right_2 {
+  right: -350px;
+}
+
+.control_tabs_blur_left_1 {
+  left: -250px;
+  top: -250px;
+}
+.control_tabs_blur_left_2 {
+  left: -200px;
+  top: -200px;
+}
+.control_tabs_blur_left_3 {
+  left: -250px;
+  top: 1750px;
+}
+.control_tabs_blur_left_4 {
+  left: -100px;
+  top: 1700px;
+}
+
+.control_tabs_blur_right_1 {
+  top: 1100px;
+}
+.control_tabs_blur_right_2 {
+  top: 1350px;
+  right: -450px;
+}
+.control_tabs_blur_right_3 {
+  top: 2550px;
+  right: -250px;
+}
+.control_tabs_blur_right_4 {
+  top: 2650px;
+  right: -350px;
+}
+
 .control_tabs_body {
   display: flex;
   align-items: center;
@@ -417,6 +479,7 @@
   flex-direction: column;
 
   position: relative;
+  z-index: 1;
   margin-top: -90px;
 }
 
@@ -565,6 +628,9 @@
 }
 /* ======================================================================================================================================================== */
 .pet_owner_body {
+  position: relative;
+  z-index: 2;
+
   padding-block: 40px;
 
   display: grid;
@@ -642,6 +708,8 @@
 }
 
 .pet_owner_info_icon_block {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 24px;
