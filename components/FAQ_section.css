@@ -1,3 +1,5 @@
+@import url("../css/variables.css");
+
 .faq {
   padding: 80px 0 250px 0;
 }
@@ -69,8 +71,24 @@
   line-height: 30px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1000px) {
+  .faq_title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 800px) {
   .faq {
     padding: 40px 0 250px 0;
+  }
+
+  .faq_body {
+    gap: 0px;
+  }
+
+  .faq_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
   }
 }

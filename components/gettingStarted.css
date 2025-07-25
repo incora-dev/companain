@@ -1,3 +1,5 @@
+@import url("../css/variables.css");
+
 .cta_section__container {
   padding: 75px 0;
 }
@@ -116,7 +118,13 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1000px) {
+  .cta_section_info_title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 800px) {
   .cta_section__container {
     padding: 25px;
   }
@@ -150,5 +158,13 @@
   .cta_large_phone {
     right: 18%;
     width: 30%;
+  }
+
+  .cta_section_info_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+
+    text-align: start;
   }
 }

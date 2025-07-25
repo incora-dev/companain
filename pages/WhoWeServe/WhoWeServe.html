@@ -24,7 +24,22 @@
               ></object>
             </div>
             <nav class="header__menu">
-              <ul class="menu__list">
+              <ul id="menu__list" class="menu__list">
+                <li class="menu__item close">
+                  <button id="close_button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="40px"
+                      viewBox="0 -960 960 960"
+                      width="40px"
+                      fill="#ffffff"
+                    >
+                      <path
+                        d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"
+                      />
+                    </svg>
+                  </button>
+                </li>
                 <li class="menu__item">
                   <a href="../../index.html" class="menu__link">Home</a>
                 </li>
@@ -32,8 +47,8 @@
                   <a href="#" class="menu__link">Who We Serve</a>
                 </li>
                 <li class="menu__item">
-                  <a href="../OurTeam/OurTeam.html" class="menu__link"
-                    >Mission</a
+                  <a href="../AboutUs/AboutUs.html" class="menu__link"
+                    >About Us</a
                   >
                 </li>
                 <li class="menu__item">
@@ -42,7 +57,25 @@
               </ul>
             </nav>
             <div class="actions-header">
-              <button class="actions-header__button">Join the beta</button>
+              <button id="join_beta_btn" class="actions-header__button">
+                Join the beta
+              </button>
+              <button class="burger_menu_button" id="nav_burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -77,7 +110,7 @@
                       >
                     </div>
                   </div>
-                  <div class="cover_body_animal_item">
+                  <div id="cover_img_to_hide" class="cover_body_animal_item">
                     <img
                       class="cover_body_animal_item__image"
                       src="../../assets/whoWeServe/TogetherForHealth.png"
@@ -87,7 +120,7 @@
                       >[Together for Health]</span
                     >
                   </div>
-                  <div class="cover_body_animal_item">
+                  <div id="cover_img_to_hide" class="cover_body_animal_item">
                     <img
                       class="cover_body_animal_item__image"
                       src="../../assets/whoWeServe/PartnersInCare.png"
@@ -124,7 +157,7 @@
                 </div>
 
                 <div class="cover_bot_col_end_block">
-                  <div class="cover_body_animal_item">
+                  <div id="cover_img_to_hide" class="cover_body_animal_item">
                     <img
                       class="cover_body_animal_item__image"
                       src="../../assets/whoWeServe/Trust.png"
@@ -216,49 +249,49 @@
                     “wait and see.”
                   </div>
                 </div>
-                <div class="for_parent_body_slider_wrapper">
+                <div class="vertical_slider_track_wrapper_wrapper">
                   <img
                     id="arrow_up"
                     alt="arrow"
                     src="../../assets/whoWeServe/arrow_bottom.svg"
                   />
-                  <div class="for_parent_body_slider_title">
+                  <div class="vertical_slider_track_wrapper_title">
                     These are the people we build for.
                   </div>
                   <div
-                    id="for_parent_body_slider"
-                    class="for_parent_body_slider"
+                    id="vertical_slider_track_wrapper"
+                    class="vertical_slider_track_wrapper"
                   >
                     <div
-                      id="for_parent_slider_track"
-                      class="for_parent_body_slider_track"
+                      id="vertical_slider_track"
+                      class="vertical_slider_track_wrapper_track"
                     >
-                      <div class="for_parent_body_slider_item">
-                        <div class="for_parent_body_slider_item_q">
+                      <div class="vertical_slider_item">
+                        <div class="vertical_slider_item_q">
                           We serve the ones who notice the subtle changes—the
                           extra nap, the missed meal, the shift in energy—and
                           ask:
                         </div>
-                        <div class="for_parent_body_slider_item_a">
+                        <div class="vertical_slider_item_a">
                           “Is something wrong? Should I be worried?”
                         </div>
                       </div>
 
-                      <div class="for_parent_body_slider_item">
-                        <div class="for_parent_body_slider_item_q">
+                      <div class="vertical_slider_item">
+                        <div class="vertical_slider_item_q">
                           We serve the pet owners who love deeply and think
                           critically.
                         </div>
                       </div>
 
-                      <div class="for_parent_body_slider_item">
-                        <div class="for_parent_body_slider_item_q">
+                      <div class="vertical_slider_item">
+                        <div class="vertical_slider_item_q">
                           Those who want answers—not endless Googling.
                         </div>
                       </div>
 
-                      <div class="for_parent_body_slider_item">
-                        <div class="for_parent_body_slider_item_q">
+                      <div class="vertical_slider_item">
+                        <div class="vertical_slider_item_q">
                           Those who believe their dog, cat, or companion animal
                           deserves not only love, but longevity.
                         </div>
@@ -872,7 +905,12 @@
                   <button class="footer_connect_button">Submit</button>
                 </div>
                 <div class="footer_buttons">
-                  <button class="footer_early_access">Get early access</button>
+                  <button
+                    id="footer_early_access_btn"
+                    class="footer_early_access"
+                  >
+                    Get early access
+                  </button>
                   <div class="footer_download">
                     <object
                       type="image/svg+xml"
@@ -890,194 +928,131 @@
         </div>
       </footer>
     </div>
+    <div id="join_beta_modal" class="join_beta_modal">
+      <div class="join_beta_modal_body">
+        <section class="join_beta_modal_body_logo_section">
+          <img
+            class="logo_section_info_image"
+            src="../../assets/largeLogo.svg"
+            alt="large_logo"
+          />
+          <div class="logo_section_info_block">
+            <div class="logo_section_info_block_title">
+              Join <br />
+              the CompanAIn Beta Program
+            </div>
+            <div class="logo_section_info_block_subtitle">
+              Help us build the future of pet care
+            </div>
+          </div>
+        </section>
+        <section class="join_beta_modal_body_form_section">
+          <button class="close_beta_modal_button" id="close_beta_modal_button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#000000"
+            >
+              <path
+                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"
+              />
+            </svg>
+          </button>
+
+          <div class="logo_section_form_block_title">Sign Up to Beta Test</div>
+          <div class="logo_section_block_form">
+            <label style="grid-area: beta_form_block_1" class="input_label">
+              <div>Full Name <span class="required_field">*</span></div>
+              <input
+                placeholder="John Paw"
+                class="partner_input"
+                type="text"
+                name="name"
+                id="full_name"
+              />
+            </label>
+            <label style="grid-area: beta_form_block_2" class="input_label">
+              <div>Email Adress <span class="required_field">*</span></div>
+              <input
+                placeholder="johnpaw@email.com"
+                class="partner_input"
+                type="text"
+                name="email"
+                id="email"
+              />
+            </label>
+            <label style="grid-area: beta_form_block_3" class="input_label">
+              <div>Platform</div>
+              <button
+                class="platform_switch_button active"
+                id="ios_btn"
+                data-value="ios"
+              >
+                iOS
+              </button>
+            </label>
+            <label style="grid-area: beta_form_block_4" class="input_label">
+              <div>&nbsp</div>
+              <button
+                class="platform_switch_button"
+                id="android_btn"
+                data-value="android"
+              >
+                Android
+              </button>
+            </label>
+            <label style="grid-area: beta_form_block_5" class="input_label">
+              <div>Why are you interested?</div>
+              <input
+                placeholder="Tell us a few words…"
+                class="partner_input"
+                type="text"
+                name="interest"
+                id="interest_reason"
+              />
+            </label>
+            <label style="grid-area: beta_form_block_6">
+              <input type="checkbox" class="custom_checkbox" />
+              <span class="custom_checkmark">
+                <svg
+                  class="checkbox_icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 18 17"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.41 9.24L5.66 12.51L15.24 3.07"
+                    fill="none"
+                    stroke="#6137CD"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="checkbox_label">
+                I agree to the <a href="#">Privacy Policy</a> and
+                <a href="#">Terms & Conditions</a> and consent to participate in
+                the beta.
+              </span>
+            </label>
+          </div>
+          <div class="logo_section_form_submit_btn_wrapper">
+            <button id="beta_form_submit_btn" class="beta_form_submit_btn">
+              Join the beta
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../scripts/header.js" defer></script>
+    <script src="../../scripts/beta_modal.js" defer></script>
+    <script src="../../scripts/faq_accordion.js" defer></script>
+    <script src="../../scripts/who_we_serve.js" defer></script>
+    <script src="../../scripts/vertical_slider.js" defer></script>
   </body>
-  <script>
-    function controlTabsHandler() {
-      const tabButtons = document.querySelectorAll(".control_tab_item");
-      const tabContents = document.querySelectorAll(".control_tab_content");
-
-      tabButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          tabButtons.forEach((btn) => btn.classList.remove("active"));
-          tabContents.forEach((content) => content.classList.remove("active"));
-
-          button.classList.add("active");
-          const tabId = button.getAttribute("data-tab");
-          document.getElementById(tabId).classList.add("active");
-        });
-      });
-    }
-
-    function forParentSectionSlider() {
-      const arrowUp = document.getElementById("arrow_up");
-      const arrowDown = document.getElementById("arrow_down");
-      const answers = document.querySelectorAll(".for_parent_body_slider_item");
-      const sliderTrackWrapper = document.getElementById(
-        "for_parent_body_slider"
-      );
-      const sliderTrack = document.getElementById("for_parent_slider_track");
-      const firstSliderElementHeight = answers?.[0].offsetHeight;
-
-      sliderTrackWrapper.style.height = firstSliderElementHeight + "px";
-
-      console.log({ firstSliderElementHeight });
-
-      let currentIndex = 0;
-      const maxIndex = answers.length - 1;
-
-      function scrollToCard(index) {
-        const container = document.querySelector(".for_parent_body_slider");
-        const target = answers[index];
-
-        if (!target || !container) return;
-
-        const containerHeight = container.offsetHeight;
-        const targetTop = target.offsetTop;
-        const targetHeight = target.offsetHeight;
-
-        // sliderTrack.style.paddingTop = `${parseInt(containerHeight / 3)}px`;
-
-        const viewportHeight = window.innerHeight;
-        const paddingTop = Math.min(viewportHeight * 0.11, 77);
-        sliderTrack.style.paddingTop = `${parseInt(paddingTop)}px`;
-
-        const scrollOffset = targetTop - containerHeight / 2 + targetHeight / 2;
-        sliderTrack.style.transform = `translateY(-${scrollOffset}px)`;
-
-        answers.forEach((card) => card.classList.remove("active"));
-        target.classList.add("active");
-
-        if (index <= 0) {
-          arrowUp.style.visibility = "hidden";
-        } else {
-          arrowUp.style.visibility = "visible";
-        }
-
-        if (index >= answers.length - 1) {
-          arrowDown.style.visibility = "hidden";
-        } else {
-          arrowDown.style.visibility = "visible";
-        }
-      }
-
-      function handlePrev() {
-        currentIndex = Math.max(currentIndex - 1, 0);
-        scrollToCard(currentIndex);
-      }
-
-      function handleNext() {
-        currentIndex = Math.min(currentIndex + 1, maxIndex);
-        scrollToCard(currentIndex);
-      }
-
-      arrowUp.addEventListener("click", handlePrev);
-      arrowDown.addEventListener("click", handleNext);
-
-      scrollToCard(currentIndex);
-    }
-
-    function focusedOnMedicineAccordion() {
-      const section = document.querySelector(
-        ".vets_focused_on_medicine_accordion"
-      );
-      const headers = document.querySelectorAll(
-        ".vets_focused_on_medicine_accordion_header"
-      );
-
-      if (!headers.length) return;
-
-      let currentIndex = 1;
-      let currentInterval = null;
-
-      // const firstHeader = headers[0];
-      // const firstContent = firstHeader?.nextElementSibling;
-      // if (firstHeader && firstContent) {
-      //   requestAnimationFrame(() => {
-      //     firstHeader.classList.add("active");
-      //     const contentHeight = firstContent.scrollHeight;
-      //     firstContent.style.maxHeight = `${contentHeight + 10}px`;
-      //     firstContent.style.paddingTop = "10px";
-      //     firstContent.style.paddingBottom = "10px";
-      //   });
-      // }
-
-      function startInterval() {
-        currentInterval = setInterval(() => {
-          headers.forEach((h) => {
-            h.classList.remove("active");
-            const content = h.nextElementSibling;
-            if (content) {
-              content.style.maxHeight = null;
-              content.style.paddingTop = 0;
-              content.style.paddingBottom = 0;
-            }
-          });
-
-          const header = headers[currentIndex];
-          const content = header?.nextElementSibling;
-          if (header && content) {
-            header.classList.add("active");
-            const contentHeight = content.scrollHeight;
-            content.style.maxHeight = `${contentHeight + 10}px`;
-            content.style.paddingTop = "10px";
-            content.style.paddingBottom = "10px";
-          }
-
-          currentIndex = (currentIndex + 1) % headers.length;
-        }, 2000);
-      }
-
-      function stopInterval() {
-        clearInterval(currentInterval);
-        currentInterval = null;
-        currentIndex = 0;
-      }
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          console.log(entries, section);
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              startInterval();
-            } else {
-              stopInterval();
-            }
-          });
-        },
-        { threshold: 0.45 }
-      );
-
-      observer.observe(section);
-    }
-
-    function faqAccordions() {
-      const headers = document.querySelectorAll(".faq_accordion_header");
-
-      headers.forEach((header) => {
-        header.addEventListener("click", () => {
-          const content = header.nextElementSibling;
-          const isOpen = header.classList.contains("active");
-
-          headers.forEach((h) => {
-            h.classList.remove("active");
-            h.nextElementSibling.style.maxHeight = null;
-            h.nextElementSibling.style.paddingTop = 0;
-            h.nextElementSibling.style.paddingBottom = 0;
-          });
-
-          if (!isOpen) {
-            header.classList.add("active");
-
-            const contentHeight = content.scrollHeight + 10;
-            content.style.maxHeight = contentHeight + "px";
-          }
-        });
-      });
-    }
-
-    controlTabsHandler();
-    forParentSectionSlider();
-    focusedOnMedicineAccordion();
-    faqAccordions();
-  </script>
 </html>

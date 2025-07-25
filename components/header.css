@@ -17,6 +17,8 @@
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto;
+
+  position: relative;
 }
 .header__link-logo {
   font-size: 16px;
@@ -26,6 +28,18 @@
 
   color: white;
 }
+
+button#close_button > svg,
+button#nav_burger > svg {
+  transition: all 0.4s ease;
+}
+
+button#close_button:hover > svg,
+button#nav_burger:hover > svg {
+  stroke: var(--Aquamarine);
+  fill: var(--Aquamarine);
+}
+
 .header__link-logo:hover {
   color: var(--Aquamarine);
 }
@@ -44,6 +58,9 @@
   line-height: 1.5;
   letter-spacing: 0.5px;
   transition: color 0.3s;
+}
+.menu__item.close {
+  display: none;
 }
 .menu__link:hover {
   color: var(--Aquamarine);
@@ -70,6 +87,21 @@
   border-radius: 24px;
 }
 
+.burger_menu_button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1200px) {
+  .menu__list {
+    column-gap: 75px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .header {
     padding-block: 15px;
@@ -79,22 +111,71 @@
     column-gap: 25px;
   }
   .menu__list {
-    column-gap: 20px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+
+    width: 250px;
+
+    padding: 20px 14px;
+
+    background: #000;
+    border-left: 4px solid var(--Aquamarine);
+
+    height: 100vh;
+
+    transition: all 0.4s ease;
   }
+
+  .menu__item.close {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .menu__list.show {
+    right: 0;
+  }
+
+  .menu__item {
+    padding: 8px 15px;
+  }
+
   .actions-header {
     column-gap: 10px;
   }
   .actions-header__button {
     padding-inline: 15px;
+    display: none;
+  }
+
+  .burger_menu_button {
+    display: flex;
   }
 }
 @media (max-width: 767.98px) {
   .header__body {
     padding-block: 8px;
     padding-inline-start: 24px;
-    padding-inline-end: 8px;
-    grid-template-columns: auto auto;
     justify-content: space-between;
+  }
+
+  .menu__list {
+    width: 100vw;
+    border-left: none;
+  }
+
+  .menu__item {
+    text-align: end;
+  }
+
+  .menu__link {
+    font-size: 28px;
   }
 }
 @media (max-width: 439.98px) {

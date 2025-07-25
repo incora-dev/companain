@@ -8,9 +8,10 @@
 
   --Aquamarine: #45e1a7;
   --Aquamarine-60: rgba(69, 225, 167, 0.6);
-  --Purple-Hearth: #6137cd;
+  --Purple-Heart: #6137cd;
   --Black: #000;
   --White: #fff;
+  --Red: #d74b4b;
   --White-50: rgba(255, 255, 255, 0.5);
   --Onyx: #121212;
   --Gray: rgba(0, 0, 0, 0.54);
@@ -22,5 +23,8 @@
     #cbbdf3 16.78%,
     #dcfde8 83.35%
   );
-  --Tablet: 785px;
+  --Mobile-FS: 50px;
+  --Mobile-FW: 500;
+  --Mobile-LH: 72px;
+  --Tablet-FS: 70px;
 }

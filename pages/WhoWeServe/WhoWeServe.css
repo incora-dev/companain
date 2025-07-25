@@ -51,9 +51,6 @@
 .cover_dna_bg {
   position: absolute;
   z-index: 2;
-  /* 
-  top: -242px;
-  right: -67px; */
 
   pointer-events: none;
 
@@ -105,6 +102,7 @@
 
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .cover_top_image_col {
@@ -130,6 +128,35 @@
   display: flex;
   align-items: end;
   gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .cover_dna_bg {
+    top: -475px;
+  }
+  .cover_top_col_subtitle_block {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #cover_img_to_hide {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .cover_dna_bg {
+    top: -275px;
+  }
+
+  .cover_top_image_col {
+    align-items: end;
+  }
+
+  .cover_body_animal_item__image {
+    width: 100%;
+  }
 }
 
 /* ======================================================================================================================================================== */
@@ -195,6 +222,9 @@
   gap: 20px;
 
   padding-block: 40px;
+
+  position: relative;
+  z-index: 2;
 }
 
 .control_tab_item {
@@ -290,7 +320,7 @@
   line-height: 30px;
 }
 
-.for_parent_body_slider_wrapper {
+.vertical_slider_track_wrapper_wrapper {
   position: relative;
   z-index: 1;
 
@@ -305,7 +335,7 @@
   align-items: start;
 }
 
-.for_parent_body_slider_title {
+.vertical_slider_track_wrapper_title {
   color: var(--Black);
 
   font-size: 22px;
@@ -316,13 +346,13 @@
   text-align: left;
 }
 
-.for_parent_body_slider {
+.vertical_slider_track_wrapper {
   width: 100%;
 
   overflow: hidden;
 }
 
-.for_parent_body_slider_track {
+.vertical_slider_track_wrapper_track {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -330,7 +360,7 @@
   transition: transform 0.3s ease;
 }
 
-.for_parent_body_slider_item {
+.vertical_slider_item {
   padding: 40px 32px;
 
   display: flex;
@@ -345,11 +375,11 @@
   transition: opacity 0.3s ease;
 }
 
-.for_parent_body_slider_item.active {
+.vertical_slider_item.active {
   opacity: 1;
 }
 
-.for_parent_body_slider_item_q {
+.vertical_slider_item_q {
   color: var(--White);
 
   font-size: 24px;
@@ -358,7 +388,7 @@
   line-height: 30px;
 }
 
-.for_parent_body_slider_item_a {
+.vertical_slider_item_a {
   color: var(--White);
 
   font-size: 24px;
@@ -390,9 +420,13 @@
 @media (max-width: 1000px) {
   .for_pet_info_title,
   .for_pet_info_subtitle,
-  .for_parent_body_slider_title {
+  .vertical_slider_track_wrapper_title {
     text-align: center;
     width: 100%;
+  }
+
+  .for_pet_info_title {
+    font-size: var(--Tablet-FS);
   }
 
   .for_pet_parents_body {
@@ -402,6 +436,27 @@
 
   .for_pet_info {
     gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .vertical_slider_track_wrapper_wrapper {
+    padding: 30px 0 85px 0;
+  }
+
+  .for_pet_info_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+
+  .for_pet_info {
+    gap: 20px;
+  }
+
+  .vertical_slider_item_q,
+  .vertical_slider_item_a {
+    font-size: 22px;
   }
 }
 /* ======================================================================================================================================================== */
@@ -473,7 +528,7 @@
 
   border-radius: 24px;
   background: var(--Light-Blur);
-  backdrop-filter: blur(26px);
+  backdrop-filter: blur(16px);
 
   display: flex;
   flex-direction: column;
@@ -518,7 +573,7 @@
   color: var(--White);
 }
 .question_card:nth-child(3) {
-  background-color: var(--Purple-Hearth);
+  background-color: var(--Purple-Heart);
   color: var(--White);
 }
 
@@ -618,12 +673,25 @@
     flex: none;
     margin: 0;
   }
+
+  .care_with_insight_title {
+    font-size: var(--Tablet-FS);
+    text-align: center;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .care_with_insight_body {
     gap: 25px;
     padding-block: 43px;
+  }
+
+  .care_with_insight_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+
+    text-align: center;
   }
 }
 /* ======================================================================================================================================================== */
@@ -682,7 +750,7 @@
 
 /* purple variant */
 .pet_owner_info_block.purple {
-  background-color: var(--Purple-Hearth);
+  background-color: var(--Purple-Heart);
 }
 
 .pet_owner_info_block.purple .pet_owner_info_block_pre_title {
@@ -754,6 +822,49 @@
       "pet_owner_info_block_2 pet_owner_info_block_3"
       "pet_owner_info_block_4 pet_owner_info_block_5";
   }
+
+  .pet_owner_info_block .pet_owner_info_block_title {
+    font-size: var(--Tablet-FS);
+  }
+}
+@media (max-width: 800px) {
+  .pet_owner_body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas:
+      "pet_owner_info_block_1 pet_owner_info_block_1"
+      "pet_owner_info_block_2 pet_owner_info_block_3"
+      "pet_owner_info_block_4 pet_owner_info_block_5";
+  }
+
+  .pet_owner_info_block {
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .pet_owner_info_block .pet_owner_info_block_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 650px) {
+  .pet_owner_body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "pet_owner_info_block_1"
+      "pet_owner_info_block_2"
+      "pet_owner_info_block_3"
+      "pet_owner_info_block_4"
+      "pet_owner_info_block_5";
+  }
 }
 /* ======================================================================================================================================================== */
 .the_result_body {
@@ -761,6 +872,9 @@
 
   display: flex;
   flex-direction: column;
+
+  position: relative;
+  z-index: 2;
 }
 
 .the_result_body_title {
@@ -818,9 +932,15 @@
 }
 
 @media (max-width: 1000px) {
+  .the_result_body {
+    padding-top: 0;
+  }
+
   .the_result_body_content {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    margin: 0;
   }
 
   .the_result_body_content_item {
@@ -831,11 +951,24 @@
   .the_result_body_content_item_info {
     text-align: justify;
   }
+
+  .the_result_body_title {
+    font-size: var(--Tablet-FS);
+  }
 }
 
-@media (max-width: 770px) {
-  .the_result_body {
-    padding-top: 0;
+@media (max-width: 800px) {
+  .the_result_body_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    margin: 0;
+  }
+
+  .the_result_body_content_item {
+    padding: 80px 20px 20px 20px;
+
+    gap: 20px;
   }
 }
 
@@ -845,6 +978,9 @@
   display: flex;
   gap: 30px;
   align-items: stretch;
+
+  position: relative;
+  z-index: 2;
 }
 
 .vets_focused_on_medicine_body_info {
@@ -930,6 +1066,7 @@
 @media (max-width: 1000px) {
   .vets_focused_on_medicine_body_info_title {
     text-align: center;
+    font-size: var(--Tablet-FS);
   }
   .vets_focused_on_medicine_body {
     padding: 60px 0 0 0;

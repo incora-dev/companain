@@ -105,6 +105,13 @@
   z-index: 3;
 }
 
+@media (max-width: 800px) {
+  .hero_background_section__item,
+  .hero_subtitle {
+    display: none;
+  }
+}
+
 /* ======================================================================================================================================================== */
 
 .pulsation_button {
@@ -122,7 +129,7 @@
   padding: 20px 40px;
 
   color: white;
-  background-color: var(--Purple-Hearth);
+  background-color: var(--Purple-Heart);
 
   border-radius: 88px;
 
@@ -205,6 +212,25 @@
   90%,
   100% {
     border-color: rgba(97, 55, 205, 0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .pulsation_button {
+    button {
+      font-weight: 500;
+      font-size: 28px;
+      padding: 20px 25px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .pulsation_button {
+    button {
+      font-size: 24px;
+      padding: 15px 20px;
+    }
   }
 }
 
@@ -333,8 +359,14 @@
 
 .keep_tracking_button {
   position: absolute;
-  bottom: 140px;
+  bottom: 130px;
   right: -50px;
+}
+
+@media (max-width: 1200px) {
+  .keep_tracking_button {
+    right: 50px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -346,9 +378,28 @@
   .keep_tracking_info_description {
     text-align: center;
   }
+
+  .keep_tracking_info_title {
+    font-size: 70px;
+  }
+
+  .keep_tracking_button {
+    right: 50px;
+    bottom: 140px;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .keep_tracking_info_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+
+  .keep_tracking_button {
+    right: 50px;
+    bottom: 150px;
+  }
 }
 
 /* ======================================================================================================================================================== */
@@ -505,7 +556,14 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .about_animal_health_figure_with_icons {
+    transform: scale(0.75);
+  }
+
+  .about_animal_health_info_description {
+    font-size: 22px;
+  }
 }
 /* ======================================================================================================================================================== */
 .smart_pet_care {
@@ -586,6 +644,9 @@
   align-items: start;
   justify-content: start;
   gap: 34px;
+
+  position: relative;
+  z-index: 2;
 }
 
 .smart_pet_accordion_item {
@@ -666,7 +727,20 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .smart_pet_info_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+
+  .smart_pet_body_info {
+    width: 100%;
+  }
+
+  .smart_pet_body_image {
+    display: none;
+  }
 }
 
 /* ======================================================================================================================================================== */
@@ -858,9 +932,35 @@
   .proactive_info_section {
     text-align: justify;
   }
+
+  .proactive_title:nth-child(2) {
+    font-size: 70px;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .proactive_title {
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  .proactive_title .proactive_title_subtitle {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+
+  .proactive_title:nth-child(2) {
+    font-size: 60px;
+  }
+
+  .proactive_steps {
+    transform: scale(0.75);
+  }
+
+  .proactive_info_section {
+    font-size: 22px;
+  }
 }
 /* ======================================================================================================================================================== */
 
@@ -939,12 +1039,18 @@
 
 @media (max-width: 1000px) {
   .raising_standart_title {
-    font-size: 90px;
-    top: 45px;
+    font-size: var(--Tablet-FS);
+    top: 0px;
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .raising_standart_title {
+    font-size: calc(var(--Mobile-FS) - 3px);
+    line-height: 0.85;
+    top: 2px;
+    letter-spacing: normal;
+  }
 }
 
 /* ======================================================================================================================================================== */
@@ -1097,12 +1203,55 @@
     text-align: center;
   }
 
+  .coming_soon_title {
+    font-size: 70px;
+  }
+
   .coming_soon_content_section {
     flex-direction: column;
   }
+
+  .coming_soon_feature_wrapper {
+    gap: 40px;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .coming_soon_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+  .coming_soon_body {
+    padding: 45px 0;
+
+    gap: 35px;
+  }
+
+  .coming_soon_feature_wrapper {
+    padding: 28px;
+    gap: 24px;
+  }
+
+  .coming_soon_feature_tag {
+    font-size: 18px;
+  }
+
+  .coming_soon_feature_description {
+    gap: 18px;
+  }
+
+  .coming_soon_feature_description_title {
+    font-size: 28px;
+  }
+
+  .coming_soon_feature_description_info {
+    font-size: 18px;
+  }
+
+  .coming_soon_subtitle {
+    font-size: 22px;
+  }
 }
 /* ======================================================================================================================================================== */
 .footsteps_section {
@@ -1301,24 +1450,69 @@
 }
 
 @media (max-width: 1000px) {
-  /* .footsteps_section__container {
-    top: calc(30% - 300px);
-  } */
-
   .footsteps_section__container {
-    top: calc(30% - 175px);
+    top: calc(30% - 255px);
   }
 
   .footsteps_card_section {
-    padding: 150px 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
+  .footsteps_section__container {
+    position: static;
+  }
+
+  .footsteps_section_body {
+    flex-direction: column;
+  }
+
+  .footsteps_scrolling_section_middle {
+    height: fit-content;
+  }
+
+  .footsteps_scrolling_section_top_blur,
+  .footsteps_scrolling_section_bottom_blur {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .footsteps_section_body {
+    gap: 15px;
+    padding: 45px 0;
+  }
+
+  .footsteps_card_section {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+
+  .footsteps_scrolling_section_middle {
+    padding: 0px 10px;
+  }
+
+  .footsteps_scrolling_section_list {
+    gap: 15px;
+  }
+
+  .footsteps_scrolling_section_item_title,
+  .footsteps_scrolling_section_item::marker {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .footsteps_scrolling_section_item_descripton {
+    font-size: 18px;
+  }
 }
 /* ======================================================================================================================================================== */
 .use_cases {
-  background: var(--Purple-Hearth);
+  background: var(--Purple-Heart);
   position: relative;
   z-index: 2;
 }
@@ -1414,16 +1608,34 @@
 }
 
 @media (max-width: 1000px) {
-  .use_case_title {
-    /* font-size: 64px; */
-  }
-
   .use_cases_content {
     grid-template-columns: 1fr;
   }
+
+  .use_case_title {
+    font-size: 120px;
+    top: 0;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+  .use_case_title {
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+    line-height: normal;
+    top: 0px;
+  }
+
+  .use_case_item {
+    padding: 20px 12px;
+
+    gap: 20px;
+  }
+
+  .use_case_item_icon_wrapper {
+    width: 40%;
+  }
 }
 /* ======================================================================================================================================================== */
 .gallery_section {
@@ -1717,4 +1929,24 @@
   pointer-events: none;
 }
 
+@media (max-width: 1000px) {
+  .feedback_setion_title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .feedback_section_body {
+    transform: scale(0.85);
+  }
+
+  .feedback_setion_title {
+    padding-bottom: 0px;
+    margin-bottom: -45px;
+    padding-top: 20px;
+    font-weight: var(--Mobile-FW);
+    font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+  }
+}
 /* ======================================================================================================================================================== */

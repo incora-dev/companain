@@ -21,7 +21,12 @@
               <object type="image/svg+xml" data="assets/logo.svg"></object>
             </div>
             <nav class="header__menu">
-              <ul class="menu__list">
+              <ul id="menu__list" class="menu__list">
+                <li class="menu__item close">
+                  <button id="close_button" >
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                  </button>
+                </li>
                 <li class="menu__item">
                   <a href="#" class="menu__link">Home</a>
                 </li>
@@ -29,7 +34,7 @@
                   <a href="./pages/WhoWeServe/WhoWeServe.html" class="menu__link">Who We Serve</a>
                 </li>
                 <li class="menu__item">
-                  <a href="./pages/OurTeam/OurTeam.html" class="menu__link">Mission</a>
+                  <a href="./pages/AboutUs/AboutUs.html" class="menu__link">About Us</a>
                 </li>
                 <li class="menu__item">
                   <a href="#" class="menu__link">Resources</a>
@@ -37,7 +42,14 @@
               </ul>
             </nav>
             <div class="actions-header">
-              <button class="actions-header__button">Join the beta</button>
+              <button id="join_beta_btn" class="actions-header__button">Join the beta</button>
+              <button class="burger_menu_button" id="nav_burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -796,447 +808,155 @@
           </div>
         </section>
       </main>
-      <footer class="footer">        
+      <footer class="footer">
         <div class="footer__container">
-          <img class="footer_cat" src="assets/footer/footer_cat.png" alt="footer_cat.png">
-          <div class="footer_body">
-            <div class="footer_social">
-              <div class="footer_logo_and_more">
-                <img src="assets/footer/footer_logo.png" alt="footer_logo.png">
-                <div class="footer_watchword">Your pet's health journey, simplified and personalized</div>
-                <div class="footer_socials">
-                  <object type="image/svg+xml" data="assets/footer/facebook.svg"></object>
-                  <object type="image/svg+xml" data="assets/footer/insta.svg"></object>
-                  <object type="image/svg+xml" data="assets/footer/tiktok.svg"></object>
-                </div>
+           <img
+              class="footer_cat"
+              src="assets/footer/footer_cat.png"
+              alt="footer_cat.png"
+              />
+           <div class="footer_body">
+              <div class="footer_social">
+                 <div class="footer_logo_and_more">
+                    <img
+                       src="assets/footer/footer_logo.png"
+                       alt="footer_logo.png"
+                       />
+                    <div class="footer_watchword">
+                       Your pet's health journey, simplified and personalized
+                    </div>
+                    <div class="footer_socials">
+                       <object
+                          type="image/svg+xml"
+                          data="assets/footer/facebook.svg"
+                          ></object>
+                       <object
+                          type="image/svg+xml"
+                          data="assets/footer/insta.svg"
+                          ></object>
+                       <object
+                          type="image/svg+xml"
+                          data="assets/footer/tiktok.svg"
+                          ></object>
+                    </div>
+                 </div>
+                 <div class="footer_social_license">© 2025 CompanAIn</div>
               </div>
-              <div class="footer_social_license">
-                © 2025 CompanAIn
+              <div class="footer_company">
+                 <span class="footer_title">Company</span>
+                 <span class="company_link">Support</span>
+                 <span class="company_link">Privacy Policy</span>
+                 <span class="company_link">Mission</span>
+                 <span class="company_link">Who We Serve</span>
+                 <span class="company_link">Partners</span>
+                 <span class="company_link">Resources</span>
               </div>
-            </div>
-            <div class="footer_company">
-              <span class="footer_title">Company</span>
-              <span class="company_link">Support</span>
-              <span class="company_link">Privacy Policy</span>
-              <span class="company_link">Mission</span>
-              <span class="company_link">Who We Serve</span>
-              <span class="company_link">Partners</span>
-              <span class="company_link">Resources</span>
-            </div>
-            <div class="footer_connect">
-              <div class="connect_section">
-                <span class="footer_title">Connect</span>
-                <div class="connect_form">
-                  <input name="email" placeholder="Enter your email" class="footer_connect_input" type="text" />
-                  <button class="footer_connect_button" >Submit</button>
-                </div>
-                <div class="footer_buttons">
-                  <button class="footer_early_access">
-                    Get early access
-                  </button>
-                  <div class="footer_download">
-                    <object type="image/svg+xml" data="assets/footer/app_store.svg"></object>
-                    <object type="image/svg+xml" data="assets/footer/play_market.svg"></object>
-                  </div>
-                </div>
+              <div class="footer_connect">
+                 <div class="connect_section">
+                    <span class="footer_title">Connect</span>
+                    <div class="connect_form">
+                       <input
+                          name="email"
+                          placeholder="Enter your email"
+                          class="footer_connect_input"
+                          type="text"
+                          />
+                       <button class="footer_connect_button">Submit</button>
+                    </div>
+                    <div class="footer_buttons">
+                       <button id="footer_early_access_btn" class="footer_early_access">Get early access</button>
+                       <div class="footer_download">
+                          <object
+                             type="image/svg+xml"
+                             data="assets/footer/app_store.svg"
+                             ></object>
+                          <object
+                             type="image/svg+xml"
+                             data="assets/footer/play_market.svg"
+                             ></object>
+                       </div>
+                    </div>
+                 </div>
               </div>
-            </div>
-          </div>
+           </div>
         </div>
-      </footer>
+     </footer>
+    </div>
+    <div id="join_beta_modal" class="join_beta_modal">
+      <div class="join_beta_modal_body">
+        <section class="join_beta_modal_body_logo_section">
+          <img class="logo_section_info_image" src="assets/largeLogo.svg" alt="large_logo" />
+          <div class="logo_section_info_block">
+            <div class="logo_section_info_block_title">
+              Join <br /> the CompanAIn Beta Program
+            </div>
+            <div class="logo_section_info_block_subtitle">Help us build the future of pet care</div>
+          </div>
+        </section>
+        <section class="join_beta_modal_body_form_section">
+          <button class="close_beta_modal_button" id="close_beta_modal_button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+          </button>
+
+          <div class="logo_section_form_block_title">Sign Up to Beta Test</div>
+          <div class="logo_section_block_form">
+            <label style="grid-area: beta_form_block_1" class="input_label">
+              <div>Full Name <span class="required_field">*</span></div>
+              <input placeholder="John Paw" class="partner_input" type="text" name="name" id="full_name">
+            </label>
+            <label style="grid-area: beta_form_block_2" class="input_label">
+              <div>Email Adress <span class="required_field">*</span></div>
+              <input placeholder="johnpaw@email.com" class="partner_input" type="text" name="email" id="email">
+            </label>
+            <label style="grid-area: beta_form_block_3" class="input_label">
+              <div>Platform</div>
+              <button class="platform_switch_button active" id="ios_btn" data-value="ios">iOS</button>
+            </label>
+            <label style="grid-area: beta_form_block_4" class="input_label">
+              <div>&nbsp</div>
+              <button class="platform_switch_button" id="android_btn" data-value="android">Android</button>
+            </label>
+            <label style="grid-area: beta_form_block_5" class="input_label">
+              <div>Why are you interested?</div>
+              <input placeholder="Tell us a few words…" class="partner_input" type="text" name="interest" id="interest_reason">
+            </label>
+            <label style="grid-area: beta_form_block_6">
+              <input type="checkbox" class="custom_checkbox" />
+              <span class="custom_checkmark">
+                <svg
+                class="checkbox_icon"
+                width="16"
+                height="16"
+                viewBox="0 0 18 17"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.41 9.24L5.66 12.51L15.24 3.07"
+                  fill="none"
+                  stroke="#6137CD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              </span>
+              <span class="checkbox_label">
+                I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions</a> and consent to participate in the beta.
+              </span>
+            </label>
+          </div>
+          <div class="logo_section_form_submit_btn_wrapper">
+            <button id="beta_form_submit_btn" class="beta_form_submit_btn">Join the beta</button>
+          </div>
+        </section>
+      </div>
     </div>
 
-    <script>
-        class PulsationButton extends HTMLElement {
-            constructor() {
-                super();
-                const shadow = this.attachShadow({
-                    mode: "open"
-                });
-
-                shadow.innerHTML = `
-                          <style>
-                            .pulsation_button {
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                            }
-                
-                            button {
-                              font-weight: 600;
-                              font-size: 32px;
-                              line-height: 100%;
-                              padding: 30px 40px;
-                              letter-spacing: 0;
-                              color: white;
-                              background-color: #6137CD;
-                              border-radius: 88px;
-                              position: relative;
-                              z-index: 3;
-                              border: none;
-                              cursor: pointer;
-
-                              transition: background-color 0.3s ease;
-                            }
-
-                            button:hover {
-                              background-color: #4d2aa5;
-                            }
-                
-                            .pulsation_button__outer_border {
-                              position: relative;
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                              padding: 7px;
-                              border: 3px solid rgba(97, 55, 205, 0);
-                              border-radius: 88px;
-                              animation-duration: 3.5s;
-                              animation-timing-function: ease-in-out;
-                              animation-iteration-count: infinite;
-                              animation-fill-mode: both;
-
-                              z-index: 1;
-                            }
-                
-                            .outer_border_layer_1 {
-                              animation-name: step-1;
-                            }
-                            .outer_border_layer_2 {
-                              animation-name: step-2;
-                            }
-                            .outer_border_layer_3 {
-                              animation-name: step-3;
-                            }
-                            .outer_border_layer_4 {
-                              animation-name: step-4;
-                            }
-                
-                            @keyframes step-1 {
-                              20%, 100% { border-color: rgba(97, 55, 205, 0); }
-                              20% { border-color: rgba(97, 55, 205, 0.8); }
-                            }
-                            @keyframes step-2 {
-                              40%, 100% { border-color: rgba(97, 55, 205, 0); }
-                              40% { border-color: rgba(97, 55, 205, 0.6); }
-                            }
-                            @keyframes step-3 {
-                              60%, 100% { border-color: rgba(97, 55, 205, 0); }
-                              60% { border-color: rgba(97, 55, 205, 0.4); }
-                            }
-                            @keyframes step-4 {
-                              80%, 100% { border-color: rgba(97, 55, 205, 0); }
-                              80% { border-color: rgba(97, 55, 205, 0.1); }
-                              80%, 90% { border-color: rgba(97, 55, 205, 0.2); }
-                              90%, 100% { border-color: rgba(97, 55, 205, 0); }
-                            }
-                          </style>
-                
-                          <div class="pulsation_button">
-                            <div class="pulsation_button__outer_border outer_border_layer_4">
-                              <div class="pulsation_button__outer_border outer_border_layer_3">
-                                <div class="pulsation_button__outer_border outer_border_layer_2">
-                                  <div class="pulsation_button__outer_border outer_border_layer_1">
-                                    <button><slot>Click Me</slot></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        `;
-            }
-
-            connectedCallback() {
-                const label = this.getAttribute("label");
-                if (label) {
-                    this.shadowRoot.querySelector("button").textContent = label;
-                }
-            }
-        }
-
-        customElements.define("pulsation-button", PulsationButton);
-
-        function smarPetAnimations() {
-            const headers = document.querySelectorAll(".smart_pet_accordion_header");
-            const smartPetImageContainer = document.getElementById('smart_pet_img_wrapper');
-            const smartPetImage = document.getElementById('smart_pet_img');
-
-            function switchAcordion(index) {
-                const header = headers?.[index]
-                const content = header.nextElementSibling;
-                const isOpen = header.classList.contains("active");
-                header.classList.add("active");
-                content.style.maxHeight = content.scrollHeight + 30 + "px";
-                content.style.paddingTop = 24 + "px";
-                setTimeout(() => {
-                    smartPetImage.src = `assets/smart_pet_care/image_${index}.png`
-                    smartPetImageContainer.classList.add('fade');
-                }, 400)
-            }
-
-            switchAcordion(0)
-
-            headers.forEach((header, headerIdx) => {
-                header.addEventListener("click", () => {
-                    const content = header.nextElementSibling;
-                    const isOpen = header.classList.contains("active");
-
-                    headers.forEach(h => {
-                        h.classList.remove("active");
-                        h.nextElementSibling.style.maxHeight = null;
-                        h.nextElementSibling.style.paddingTop = 0;
-                        smartPetImageContainer.classList.remove('fade');
-                    });
-
-                    if (!isOpen) {
-                        switchAcordion(headerIdx)
-                    }
-                });
-            });
-        }
-
-        smarPetAnimations()
-
-        function faqAccordions() {
-            const headers = document.querySelectorAll(".faq_accordion_header");
-
-            headers.forEach((header) => {
-                header.addEventListener("click", () => {
-                    const content = header.nextElementSibling;
-                    const isOpen = header.classList.contains("active");
-
-                    headers.forEach((h) => {
-                        h.classList.remove("active");
-                        h.nextElementSibling.style.maxHeight = null;
-                        h.nextElementSibling.style.paddingTop = 0;
-                        h.nextElementSibling.style.paddingBottom = 0;
-                    });
-
-                    if (!isOpen) {
-                        header.classList.add("active");
-
-                        const contentHeight = content.scrollHeight + 10;
-                        content.style.maxHeight = contentHeight + "px";
-                    }
-                });
-            });
-        }
-
-        faqAccordions()
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const ORDER = ["Upload", "Analyze", "Summary", "Advice", "Monitor"];
-            const section = document.querySelector(".proactive_steps");
-
-            function animateSteps() {
-                ORDER.forEach((label, idx) => {
-                    const item = document.querySelector(`.proactive_steps_item [data-label="${label}"]`)?.parentElement;
-                    if (item) {
-                        setTimeout(() => item.classList.add("active"), idx * 1500);
-                    }
-                });
-            }
-
-            const obs = new IntersectionObserver(
-                ([entry], o) => {
-                    if (entry.isIntersecting) {
-                        animateSteps();
-                        o.unobserve(section);
-                    }
-                }, {
-                    threshold: 0.4
-                }
-            );
-
-            obs.observe(section);
-        });
-
-        const feedbacks = [{
-                rating: 5,
-                feedback: 'CompanAIn helped me understand my dog’s blood test results without any vet jargon. Now I feel confident managing her care!',
-                userPhoto: './assets/feedbacks_section/users/women.png',
-                userName: 'Emily R.',
-                feedbackDate: '05/10/2025',
-                userType: 'Pet Owner',
-            },
-            {
-                rating: 5,
-                feedback: 'The AI summaries save me time and effort. It’s like having a smart assistant that gives clear insights fast — super helpful in a busy clinic.',
-                userPhoto: './assets/feedbacks_section/users/men.png',
-                userName: 'Dr. Michael T.',
-                feedbackDate: '06/10/2025',
-                userType: 'Veterinarian',
-            },
-            {
-                rating: 5,
-                feedback: 'I love how easy it is to upload and track all my cats’ health documents in one place.',
-                userPhoto: './assets/feedbacks_section/users/women.png',
-                userName: 'Sofiia L.',
-                feedbackDate: '07/10/2025',
-                userType: 'Pet Owner',
-            },
-        ];
-
-        const sliderDots = document.getElementById('sliderDots');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const sliderWrapper = document.getElementById('sliderWrapper');
-        let feedbackCards = sliderWrapper.querySelectorAll('.feedback_card');
-        const sliderTrack = document.getElementById('sliderTrack');
-
-        function renderFeedbackCards(feedbacks) {
-            sliderTrack.innerHTML = ''; // clear existing
-
-            feedbacks.forEach((item) => {
-                const card = document.createElement('div');
-                card.classList.add('feedback_card');
-
-                // Create rating stars
-                const ratingContainer = document.createElement('div');
-                ratingContainer.classList.add('feedback_rating');
-                for (let i = 0; i < item.rating; i++) {
-                    const star = document.createElement('object');
-                    star.setAttribute('type', 'image/svg+xml');
-                    star.setAttribute('data', 'assets/feedbacks_section/rating.svg');
-                    ratingContainer.appendChild(star);
-                }
-
-                // Feedback text
-                const feedbackText = document.createElement('div');
-                feedbackText.classList.add('feedback_text');
-                feedbackText.textContent = item.feedback;
-
-                const feedbackCardInfo = document.createElement('div');
-                feedbackCardInfo.classList.add('feedback_card_info');
-                feedbackCardInfo.appendChild(ratingContainer);
-                feedbackCardInfo.appendChild(feedbackText);
-
-                // User section
-                const userImg = document.createElement('img');
-                userImg.src = item.userPhoto;
-                userImg.alt = item.userName;
-
-                const userTag = document.createElement('span');
-                userTag.classList.add('feedback_user_tag');
-                userTag.textContent = item.userType;
-
-                const userName = document.createElement('div');
-                userName.classList.add('feedback_card_user_name');
-                userName.textContent = item.userName;
-                userName.appendChild(userTag);
-
-                const userDate = document.createElement('span');
-                userDate.classList.add('feedback_date');
-                userDate.textContent = item.feedbackDate;
-
-                const userInfo = document.createElement('div');
-                userInfo.classList.add('feedback_card_user_info');
-                userInfo.appendChild(userName);
-                userInfo.appendChild(userDate);
-
-                const userBlock = document.createElement('div');
-                userBlock.classList.add('feedback_card_user');
-                userBlock.appendChild(userImg);
-                userBlock.appendChild(userInfo);
-
-                // Final card
-                card.appendChild(feedbackCardInfo);
-                card.appendChild(userBlock);
-
-                sliderTrack.appendChild(card);
-            });
-        }
-
-        let currentIndex = 1;
-        const maxIndex = feedbacks.length - 1;
-
-        const handlePrev = () => {
-            currentIndex = Math.max(currentIndex - 1, 0);
-            updateSlider();
-        };
-
-        const handleNext = () => {
-            currentIndex = Math.min(currentIndex + 1, maxIndex);
-            updateSlider();
-        };
-
-        function scrollToCard(index) {
-            const cardWidth = feedbackCards[0].offsetWidth;
-            const gap = parseFloat(getComputedStyle(sliderTrack).gap) || 0;
-            const totalCardWidth = cardWidth + gap;
-
-            const offset = (index - 1) * totalCardWidth;
-
-            sliderTrack.style.transform = `translateX(${offset * -1}px)`;
-
-            feedbackCards.forEach(card => card.classList.remove('active_card'));
-            feedbackCards[index]?.classList.add('active_card');
-        }
-
-        function updateSlider() {
-            feedbackCards = sliderTrack.querySelectorAll('.feedback_card');
-            scrollToCard(currentIndex);
-            renderDots();
-        }
-
-        function renderDots() {
-            sliderDots.innerHTML = '';
-
-            feedbackCards.forEach((_, index) => {
-                const dot = document.createElement('div');
-                dot.classList.add('slider_dot');
-                if (index === currentIndex) {
-                    dot.classList.add('active');
-                }
-
-                dot.addEventListener('click', () => {
-                    currentIndex = index;
-                    updateSlider();
-                });
-
-                sliderDots.appendChild(dot);
-            });
-        }
-
-        prevBtn.addEventListener('click', handlePrev);
-        nextBtn.addEventListener('click', handleNext);
-
-        renderFeedbackCards(feedbacks)
-        updateSlider();
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const section = document.querySelector('.footsteps_section');
-            const stickyContainer = document.querySelector('.footsteps_section__container');
-            const scrollable = document.querySelector('.footsteps_scrolling_section_middle');
-            const list = document.querySelector('.footsteps_scrolling_section_list');
-            const items = document.querySelectorAll('.footsteps_scrolling_section_item');
-
-            const itemScrollDurationVH = 100;
-            const totalScrollVH = items.length * itemScrollDurationVH;
-
-            section.style.height = `${totalScrollVH}vh`;
-
-            const maxTranslate = list.scrollHeight - scrollable.clientHeight;
-
-            let ticking = false;
-
-            window.addEventListener('scroll', () => {
-                if (!ticking) {
-                    requestAnimationFrame(() => {
-                        const sectionTop = section.offsetTop;
-                        const scrollY = window.scrollY;
-                        const scrollProgressRaw = (scrollY - sectionTop + 1) / (section.offsetHeight - window.innerHeight);
-                        const progress = Math.min(1, Math.max(0, scrollProgressRaw));
-                        const translateY = progress * maxTranslate;
-                        // Move list inside sticky container
-                        list.style.transform = `translateY(-${translateY * 2.2}px)`;
-                        ticking = false;
-                    });
-
-                    ticking = true;
-                }
-            });
-        });
-    </script>
+    <script src="./scripts/pulsation_button.js" defer></script>
+    <script src="./scripts/beta_modal.js" defer></script>
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/faq_accordion.js" defer></script>
+    <script src="./scripts/feedbacks_slider.js" defer></script>
+    <script src="./scripts/home_page.js" defer></script>
   </body>
 </html>

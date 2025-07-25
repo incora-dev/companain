@@ -12,7 +12,9 @@
   padding-top: 70px;
   padding-bottom: 48px;
 
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
 
@@ -195,5 +197,33 @@
   z-index: 3;
 
   top: -333px;
-  right: 79px;
+  right: 170px;
+}
+
+@media (max-width: 1000px) {
+  .footer_cat {
+    right: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer_body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer_connect {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer_body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .footer_connect {
+    grid-column: auto;
+  }
 }

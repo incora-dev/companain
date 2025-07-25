@@ -1,0 +1,276 @@
+@import url("../css/variables.css");
+
+.join_beta_modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  background: var(--Gray);
+  backdrop-filter: blur(10px);
+
+  pointer-events: auto;
+
+  display: none;
+}
+
+.join_beta_modal.open {
+  display: block;
+}
+
+.join_beta_modal_body {
+  max-inline-size: 1088px;
+
+  position: relative;
+  z-index: 1001;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 40px;
+  background: var(--Aquamarine);
+
+  padding: 24px;
+  padding-left: 40px;
+
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+
+  pointer-events: auto;
+}
+
+.join_beta_modal_body_logo_section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.logo_section_info_block {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.logo_section_info_image {
+  position: relative;
+  bottom: -44px;
+}
+
+.logo_section_info_block_title {
+  color: var(--Black);
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.logo_section_info_block_subtitle {
+  color: var(--Gray);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.join_beta_modal_body_form_section {
+  width: 60%;
+  position: relative;
+
+  border-radius: 24px;
+  background: var(--White);
+
+  padding: 56px 48px 24px 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.close_beta_modal_button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.logo_section_form_block_title {
+  color: var(--Black);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.logo_section_block_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 32px;
+
+  grid-template-areas:
+    "beta_form_block_1 beta_form_block_2"
+    "beta_form_block_3 beta_form_block_4"
+    "beta_form_block_5 beta_form_block_5"
+    "beta_form_block_6 beta_form_block_6";
+}
+
+.logo_section_form_submit_btn_wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.beta_form_submit_btn {
+  padding: 12px 32px;
+
+  border-radius: 56px;
+  background: var(--Onyx);
+
+  color: var(--White);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.input_label {
+  position: relative;
+
+  color: var(--Gray);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox_label {
+  position: relative;
+}
+
+.partner_input {
+  display: flex;
+  padding: 4px 0px 8px 0px;
+
+  color: var(--Light-Gray);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+
+  outline: none;
+  border: none;
+
+  border-bottom: 1px solid var(--Light-Gray);
+}
+
+.partner_input::placeholder {
+  color: var(--Light-Gray);
+}
+
+.input_label.input_error .partner_input {
+  border-color: var(--Red);
+}
+
+.input_error::after {
+  content: "This field can’t be empty.";
+  color: var(--Red);
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  position: absolute;
+  top: 100%; /* below the input */
+  left: 0;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.custom_checkbox_wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+.custom_checkbox {
+  display: none;
+}
+
+.custom_checkmark {
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--Light-Gray);
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+  border-radius: 2px;
+  top: 2px;
+  box-sizing: border-box;
+}
+
+label.checkbox_error .custom_checkmark {
+  border-color: var(--Red);
+}
+
+.checkbox_icon {
+  display: none;
+}
+
+.custom_checkbox:checked + .custom_checkmark .checkbox_icon {
+  display: block;
+  margin-left: 3px;
+  transform: scale(1.2);
+}
+
+.checkbox_label {
+  color: var(--Gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  cursor: pointer;
+}
+
+.checkbox_label a {
+  color: var(--Purple-Heart);
+  font-weight: 700;
+}
+.checkbox_label a:hover {
+  text-decoration: underline;
+}
+
+.platform_switch_button {
+  padding: 8px;
+
+  border-radius: 48px;
+  border: 1px solid var(--Light-Gray);
+
+  color: var(--Gray);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  transition: all 0.3s ease;
+}
+
+.platform_switch_button.active {
+  color: var(--White);
+
+  border-radius: 48px;
+  background: var(--Purple-Heart);
+  font-weight: 700;
+}
