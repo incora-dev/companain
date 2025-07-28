@@ -120,7 +120,8 @@
 
 @media (max-width: 1000px) {
   .cta_section_info_title {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 }
 

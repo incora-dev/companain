@@ -14,7 +14,20 @@
 }
 
 .join_beta_modal.open {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join_beta_modal__container {
+  padding-inline: 15px;
+  max-inline-size: calc(1088px + 30px);
+  position: relative;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .join_beta_modal_body {
@@ -22,10 +35,6 @@
 
   position: relative;
   z-index: 1001;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
   border-radius: 40px;
   background: var(--Aquamarine);
@@ -47,6 +56,9 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
+
+  position: relative;
+  z-index: 2;
 }
 
 .logo_section_info_block {
@@ -89,6 +101,9 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  position: relative;
+  z-index: 2;
 }
 
 .close_beta_modal_button {
@@ -273,4 +288,85 @@ label.checkbox_error .custom_checkmark {
   border-radius: 48px;
   background: var(--Purple-Heart);
   font-weight: 700;
+}
+
+.modal_paw_container_1,
+.modal_paw_container_2,
+.modal_paw_container_3,
+.modal_paw_container_4,
+.modal_paw_container_5 {
+  position: absolute;
+  z-index: 1;
+}
+
+.modal_paw_container_1 {
+  top: 20px;
+  left: 20px;
+}
+
+.modal_paw_container_2 {
+  top: 50px;
+  left: 230px;
+  transform: rotate(25deg);
+}
+
+.modal_paw_container_3 {
+  left: 330px;
+  top: 280px;
+  transform: rotate(-20deg);
+}
+
+.modal_paw_container_4 {
+  right: 0px;
+  bottom: 20px;
+  transform: rotate(13deg);
+}
+
+.modal_paw_container_5 {
+  bottom: -8px;
+  right: 200px;
+  transform: rotate(-23deg);
+}
+
+@media (max-width: 1050px) {
+  .join_beta_modal_body {
+    padding: 24px;
+
+    flex-direction: column;
+  }
+
+  .logo_section_info_block_title > br {
+    display: none;
+  }
+
+  .join_beta_modal_body_logo_section {
+    text-align: center;
+  }
+
+  .logo_section_info_image {
+    width: 50px;
+    top: 0;
+  }
+
+  .join_beta_modal_body_logo_section {
+    width: 100%;
+  }
+
+  .join_beta_modal_body_form_section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .join_beta_modal_body {
+    background: transparent;
+  }
+
+  .join_beta_modal_body_logo_section {
+    display: none;
+  }
+
+  .join_beta_modal_body_form_section {
+    padding: 36px 28px 10px 15px;
+  }
 }

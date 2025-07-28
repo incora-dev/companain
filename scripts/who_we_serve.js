@@ -22,31 +22,37 @@ function focusedOnMedicineAccordion() {
 
   if (!headers.length) return;
 
-  let currentIndex = 1;
+  let currentIndex = 1; // Start from 1 because we open the first manually
   let currentInterval = null;
+
+  function resetAll() {
+    headers.forEach((h) => {
+      h.classList.remove("active");
+      const content = h.nextElementSibling;
+      if (content) {
+        content.style.maxHeight = null;
+        content.style.paddingTop = 0;
+        content.style.paddingBottom = 0;
+      }
+    });
+  }
+
+  function openAccordion(index) {
+    const header = headers[index];
+    const content = header?.nextElementSibling;
+    if (header && content) {
+      header.classList.add("active");
+      const contentHeight = content.scrollHeight;
+      content.style.maxHeight = `${contentHeight + 10}px`;
+      content.style.paddingTop = "10px";
+      content.style.paddingBottom = "10px";
+    }
+  }
 
   function startInterval() {
     currentInterval = setInterval(() => {
-      headers.forEach((h) => {
-        h.classList.remove("active");
-        const content = h.nextElementSibling;
-        if (content) {
-          content.style.maxHeight = null;
-          content.style.paddingTop = 0;
-          content.style.paddingBottom = 0;
-        }
-      });
-
-      const header = headers[currentIndex];
-      const content = header?.nextElementSibling;
-      if (header && content) {
-        header.classList.add("active");
-        const contentHeight = content.scrollHeight;
-        content.style.maxHeight = `${contentHeight + 10}px`;
-        content.style.paddingTop = "10px";
-        content.style.paddingBottom = "10px";
-      }
-
+      resetAll();
+      openAccordion(currentIndex);
       currentIndex = (currentIndex + 1) % headers.length;
     }, 2000);
   }
@@ -59,12 +65,15 @@ function focusedOnMedicineAccordion() {
 
   const observer = new IntersectionObserver(
     (entries) => {
-      console.log(entries, section);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          resetAll();
+          openAccordion(0);
+          currentIndex = 1;
           startInterval();
         } else {
           stopInterval();
+          resetAll();
         }
       });
     },

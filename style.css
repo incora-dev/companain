@@ -380,7 +380,8 @@
   }
 
   .keep_tracking_info_title {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 
   .keep_tracking_button {
@@ -713,7 +714,8 @@
   }
 
   .smart_pet_info_title {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
     line-height: 62px;
   }
 
@@ -934,7 +936,8 @@
   }
 
   .proactive_title:nth-child(2) {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 }
 
@@ -951,7 +954,7 @@
   }
 
   .proactive_title:nth-child(2) {
-    font-size: 60px;
+    font-size: var(--Mobile-FS);
   }
 
   .proactive_steps {
@@ -1040,6 +1043,7 @@
 @media (max-width: 1000px) {
   .raising_standart_title {
     font-size: var(--Tablet-FS);
+    letter-spacing: normal;
     top: 0px;
   }
 }
@@ -1204,7 +1208,8 @@
   }
 
   .coming_soon_title {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 
   .coming_soon_content_section {
@@ -1490,6 +1495,8 @@
     font-weight: var(--Mobile-FW);
     font-size: var(--Mobile-FS);
     line-height: var(--Mobile-LH);
+
+    padding: 50px 10px;
   }
 
   .footsteps_scrolling_section_middle {
@@ -1931,7 +1938,8 @@
 
 @media (max-width: 1000px) {
   .feedback_setion_title {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 }
 

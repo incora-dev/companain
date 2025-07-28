@@ -73,7 +73,8 @@
 
 @media (max-width: 1000px) {
   .faq_title {
-    font-size: 70px;
+    font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 }
 

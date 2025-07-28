@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+
+  position: relative;
+  z-index: 2;
 }
 
 .for_pet_info {
@@ -154,6 +157,7 @@
 
   .for_pet_info_title {
     font-size: var(--Tablet-FS);
+    letter-spacing: normal;
   }
 
   .for_pet_parents_body {
@@ -171,11 +175,9 @@
     padding: 30px 0 85px 0;
   }
 
-  /* .for_pet_info_title {
-    font-weight: var(--Mobile-FW);
+  .for_pet_info_title {
     font-size: var(--Mobile-FS);
-    line-height: var(--Mobile-LH);
-  } */
+  }
 
   .for_pet_info {
     gap: 20px;

@@ -100,6 +100,15 @@ class PulsationButton extends HTMLElement {
                               }
                             }
                           }
+
+                          @media (max-width: 700px) {
+                            .pulsation_button {
+                              button {
+                                font-size: 18px;
+                                padding: 15px 20px;
+                              }
+                            }
+                          }
                         </style>
               
                         <div class="pulsation_button">
