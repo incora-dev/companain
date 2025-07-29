@@ -813,6 +813,7 @@
 
   .with_you_title {
     font-size: var(--Mobile-FS);
+    line-height: normal;
   }
 }
 

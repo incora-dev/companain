@@ -558,12 +558,23 @@
 }
 
 @media (max-width: 800px) {
+  .about_animal_health_body {
+    height: fit-content;
+  }
+
   .about_animal_health_figure_with_icons {
     transform: scale(0.75);
+    margin-block: -100px;
   }
 
   .about_animal_health_info_description {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about_animal_health_figure_with_icons {
+    transform: scale(0.5);
   }
 }
 /* ======================================================================================================================================================== */
@@ -594,19 +605,29 @@
 }
 
 .smart_pet_care__container {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .smart_pet_body {
   display: flex;
   justify-content: space-between;
+  align-items: start;
+
+  flex-direction: column;
+
+  gap: 50px;
 
   position: relative;
 }
 
+.smart_pet_body_info_wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .smart_pet_body_info {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 
   gap: 60px;
 }
@@ -637,6 +658,9 @@
 
   position: relative;
   z-index: 2;
+
+  text-align: left;
+  width: 60%;
 }
 
 .smart_pet_accordion {
@@ -700,15 +724,15 @@
     padding-top: 50px;
   }
   .smart_pet_info_title {
-    position: absolute;
-
-    top: -150px;
-
     text-align: center;
   }
 }
 
 @media (max-width: 1000px) {
+  .smart_pet_body {
+    align-items: center;
+  }
+
   .smart_pet_body_info {
     width: 50%;
   }
@@ -717,6 +741,8 @@
     font-size: var(--Tablet-FS);
     letter-spacing: normal;
     line-height: 62px;
+
+    width: 100%;
   }
 
   .smart_pet_body_image {
@@ -725,15 +751,19 @@
   }
 
   .smart_pet_body_image > img {
-    height: 85%;
+    /* height: 85%; */
+    width: 100%;
   }
 }
 
 @media (max-width: 800px) {
+  .smart_pet_care__container {
+    padding-top: 0;
+  }
+
   .smart_pet_info_title {
     font-weight: var(--Mobile-FW);
     font-size: var(--Mobile-FS);
-    line-height: var(--Mobile-LH);
   }
 
   .smart_pet_body_info {
@@ -963,6 +993,12 @@
 
   .proactive_info_section {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .proactive_steps {
+    transform: scale(0.7);
   }
 }
 /* ======================================================================================================================================================== */
@@ -1605,6 +1641,10 @@
   justify-content: center;
 }
 
+.use_case_item_icon_wrapper > img {
+  width: 100%;
+}
+
 .use_case_item_content_description {
   color: rgba(255, 255, 255, 0.6);
 
@@ -1644,6 +1684,13 @@
     width: 40%;
   }
 }
+
+@media (max-width: 800px) {
+  .use_case_item_icon_wrapper > img {
+    width: 80%;
+  }
+}
+
 /* ======================================================================================================================================================== */
 .gallery_section {
   position: relative;
@@ -1955,6 +2002,12 @@
     font-weight: var(--Mobile-FW);
     font-size: var(--Mobile-FS);
     line-height: var(--Mobile-LH);
+  }
+}
+
+@media (max-width: 800px) {
+  .feedback_section_body {
+    transform: scale(0.75);
   }
 }
 /* ======================================================================================================================================================== */
