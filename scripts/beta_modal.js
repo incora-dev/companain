@@ -100,8 +100,19 @@ function betaFormHandler() {
     hasTriedToSubmit = false;
   }
 
+  function setPlatform(platform) {
+    if (platform === "ios") {
+      ios_btn.classList.add("active");
+      android_btn.classList.remove("active");
+    } else if (platform === "android") {
+      android_btn.classList.add("active");
+      ios_btn.classList.remove("active");
+    }
+  }
+
   return {
     resetForm,
+    setPlatform,
   };
 }
 
@@ -115,6 +126,17 @@ function betaModalHandler() {
   const cta_open_modal_btn = document.getElementById("cta_section_get_started");
   const close_modal_btn = document.getElementById("close_beta_modal_button");
   const modalBody = document.querySelector(".join_beta_modal_body");
+  const iosDownloadBtn = document.getElementById("app_store_download");
+  const androidDownloadBtn = document.getElementById("play_market_download");
+
+  [iosDownloadBtn, androidDownloadBtn].forEach((btn) => {
+    btn?.addEventListener("click", () => {
+      const platform = btn.dataset.platform;
+      formManager.setPlatform(platform);
+      modal.classList.add("open");
+      document.body.style.overflow = "hidden";
+    });
+  });
 
   [
     open_modal_btn,
@@ -155,6 +177,7 @@ function injectBetaModal() {
   const scriptSrc = currentScript?.src;
 
   const imagePath = scriptSrc.split("scripts")[0] + "assets/largeLogo.svg";
+  const pagesPath = scriptSrc.split("scripts")[0] + "pages/Policy";
 
   const modalHTML = `
     <div id="join_beta_modal" class="join_beta_modal">
@@ -236,7 +259,7 @@ function injectBetaModal() {
                   </svg>
                 </span>
                 <span class="checkbox_label">
-                  I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions</a> and consent to participate in the beta.
+                  I agree to the <a href="${pagesPath}/PrivacyPolicy.html">Privacy Policy</a> and <a href="${pagesPath}/TermsAndConditions.html">Terms & Conditions</a> and consent to participate in the beta.
                 </span>
               </label>
             </div>

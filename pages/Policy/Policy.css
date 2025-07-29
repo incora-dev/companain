@@ -1,0 +1,51 @@
+@import url("../../css/reset.css");
+@import url("../../css/variables.css");
+@import url("../../css/container.css");
+
+.policy_body,
+.terms_body {
+  padding-block-start: 100px;
+  padding-block-end: 180px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.last-updated {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.thank-you {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}

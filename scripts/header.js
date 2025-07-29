@@ -15,4 +15,18 @@ function sidebarHandler() {
   cross.addEventListener("click", closeSidebar);
 }
 
+function highlightActivePage() {
+  const currentPath = window.location.pathname.replace(/\/index\.html$/, "/"); // normalize index.html
+  const links = document.querySelectorAll(".menu__link");
+
+  links.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+
+    if (currentPath === linkPath || currentPath.endsWith(linkPath)) {
+      link.classList.add("active");
+    }
+  });
+}
+
+highlightActivePage();
 sidebarHandler();

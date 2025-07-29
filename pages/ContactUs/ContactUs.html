@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ContactUs.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__link-logo">
+              <object
+                type="image/svg+xml"
+                data="../../assets/logo.svg"
+              ></object>
+            </div>
+            <nav class="header__menu">
+              <ul id="menu__list" class="menu__list">
+                <li class="menu__item close">
+                  <button id="close_button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="40px"
+                      viewBox="0 -960 960 960"
+                      width="40px"
+                      fill="#ffffff"
+                    >
+                      <path
+                        d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li class="menu__item">
+                  <a href="../../index.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="../WhoWeServe/WhoWeServe.html" class="menu__link"
+                    >Who We Serve</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="../AboutUs/AboutUs.html" class="menu__link"
+                    >About Us</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="../Resources/Resources.html" class="menu__link"
+                    >Resources</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="actions-header">
+              <button id="join_beta_btn" class="actions-header__button">
+                Join the beta
+              </button>
+              <button class="burger_menu_button" id="nav_burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <main class="page">
+        <section>
+          <div class="contac_us">
+            <div class="contact_us__container">
+              <div class="contact_us_body">
+                <div class="contact_us_info_block">
+                  <div class="contact_us_info_block_title">Contact Us</div>
+                  <div class="contact_us_info_block_subtitle">
+                    <b
+                      >Discover how CompanAIn can support your veterinary
+                      practice.</b
+                    >
+                    <br />
+                    <br />
+                    Fill out the form, and a member of our team will reach out
+                    to you shortly to explore how we can work together.
+                  </div>
+                </div>
+                <div class="contact_us_form_block">
+                  <label
+                    style="grid-area: contact_us_form_block_1"
+                    class="input_label"
+                  >
+                    <div>Full Name <span class="required_field">*</span></div>
+                    <input
+                      placeholder="John Paw"
+                      class="contact_us_input"
+                      type="text"
+                      name="name"
+                      id="full_name"
+                    />
+                  </label>
+                  <label
+                    style="grid-area: contact_us_form_block_2"
+                    class="input_label"
+                  >
+                    <div>
+                      Email Address <span class="required_field">*</span>
+                    </div>
+                    <input
+                      placeholder="john.paw@email.com"
+                      class="contact_us_input"
+                      type="text"
+                      name="email"
+                      id="email"
+                    />
+                  </label>
+                  <label
+                    style="grid-area: contact_us_form_block_3"
+                    class="input_label"
+                  >
+                    <div>Role <span class="required_field">*</span></div>
+                    <input
+                      placeholder="Veterinarian"
+                      class="contact_us_input"
+                      type="text"
+                      name="role"
+                      id="role"
+                    />
+                  </label>
+                  <label
+                    style="grid-area: contact_us_form_block_4"
+                    class="input_label"
+                  >
+                    <div>
+                      Company Name <span class="required_field">*</span>
+                    </div>
+                    <input
+                      placeholder="CompanAIn"
+                      class="contact_us_input"
+                      type="text"
+                      name="company"
+                      id="company"
+                    />
+                  </label>
+                  <label
+                    style="grid-area: contact_us_form_block_5"
+                    class="input_label"
+                  >
+                    <div>Why are you interested?</div>
+                    <input
+                      placeholder="Tell us a few words…"
+                      class="contact_us_input"
+                      type="text"
+                      name="interest"
+                      id="interest_reason"
+                    />
+                  </label>
+                  <label style="grid-area: contact_us_form_block_6">
+                    <input type="checkbox" class="custom_checkbox" />
+                    <span class="custom_checkmark">
+                      <svg
+                        class="checkbox_icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 18 17"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.41 9.24L5.66 12.51L15.24 3.07"
+                          fill="none"
+                          stroke="#6137CD"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span class="checkbox_label">
+                      I agree to the
+                      <a href="../../pages/Policy/PrivacyPolicy.html"
+                        >Privacy Policy</a
+                      >
+                      and
+                      <a href="../../pages/Policy/TermsAndConditions.html"
+                        >Terms & Conditions</a
+                      >
+                      and consent to participate in the beta.
+                    </span>
+                  </label>
+                  <div
+                    style="grid-area: contact_us_form_block_7"
+                    class="contact_us_submit_button_wrapper"
+                  >
+                    <button class="contact_us_submit_button">
+                      Let’s Partner!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <img
+            class="footer_cat"
+            src="../../assets/footer/footer_cat.png"
+            alt="footer_cat.png"
+          />
+          <div class="footer_body">
+            <div class="footer_social">
+              <div class="footer_logo_and_more">
+                <img
+                  src="../../assets/footer/footer_logo.png"
+                  alt="footer_logo.png"
+                />
+                <div class="footer_watchword">
+                  Your pet's health journey, simplified and personalized
+                </div>
+                <div class="footer_socials">
+                  <a
+                    href="https://www.instagram.com/companain.ai?igsh=YWFsdXAyazM1OGNm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="../../assets/footer/insta.svg" alt="Instagram" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1D4W19wKyy/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="../../assets/footer/facebook.svg"
+                      alt="Facebook"
+                    />
+                  </a>
+                  <a
+                    href="https://x.com/companain?s=21&t=vq-m29dYoI75FvIcVZZ51Q"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="../../assets/footer/twitter.svg" alt="Twitter" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/companain/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="../../assets/footer/linkedin.svg"
+                      alt="LinkedIn"
+                    />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@companain?_t=ZT-8xrPMbm9c2B&_r=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="../../assets/footer/tiktok.svg" alt="TikTok" />
+                  </a>
+                </div>
+              </div>
+              <div class="footer_social_license">© 2025 CompanAIn</div>
+            </div>
+            <div class="footer_company">
+              <span class="footer_title">Company</span>
+              <a
+                href="../../pages/ContactUs/ContactUs.html"
+                class="company_link"
+                >Support</a
+              >
+              <a
+                href="../../pages/Policy/PrivacyPolicy.html"
+                class="company_link"
+                >Privacy Policy</a
+              >
+              <a href="../../pages/AboutUs/AboutUs.css" class="company_link"
+                >Misison</a
+              >
+              <a
+                href="../../pages/WhoWeServe/WhoWeServe.html"
+                class="company_link"
+                >Who We Serve</a
+              >
+              <span class="company_link">Partners</span>
+              <span class="company_link">Resources</span>
+            </div>
+            <div class="footer_connect">
+              <div class="connect_section">
+                <span class="footer_title">Connect</span>
+                <div class="connect_form">
+                  <input
+                    name="email"
+                    placeholder="Enter your email"
+                    class="footer_connect_input"
+                    type="text"
+                  />
+                  <button class="footer_connect_button">Submit</button>
+                </div>
+                <div class="footer_buttons">
+                  <button
+                    id="footer_early_access_btn"
+                    class="footer_early_access"
+                  >
+                    Get early access
+                  </button>
+                  <div class="footer_download">
+                    <img
+                      src="../../assets/footer/app_store.svg"
+                      alt="Download on App Store"
+                      id="app_store_download"
+                      data-platform="ios"
+                    />
+                    <img
+                      src="../../assets/footer/play_market.svg"
+                      alt="Download on Play Market"
+                      id="play_market_download"
+                      data-platform="android"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+    </div>
+
+    <script src="../../scripts/beta_modal.js" defer></script>
+    <script src="../../scripts/header.js" defer></script>
+    <script src="../../scripts/contact_us.js" defer></script>
+  </body>
+</html>

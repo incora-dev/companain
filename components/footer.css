@@ -226,4 +226,11 @@
   .footer_connect {
     grid-column: auto;
   }
+
+  .footer_cat {
+    transform: scale(0.75);
+
+    top: -302px;
+    right: -75px;
+  }
 }

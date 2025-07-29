@@ -59,10 +59,12 @@ button#nav_burger:hover > svg {
   letter-spacing: 0.5px;
   transition: color 0.3s;
 }
+
 .menu__item.close {
   display: none;
 }
-.menu__link:hover {
+.menu__link:hover,
+.menu__link.active {
   color: var(--Aquamarine);
 }
 .actions-header {
