@@ -185,6 +185,17 @@
 
   .vertical_slider_item_q,
   .vertical_slider_item_a {
-    font-size: 22px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vertical_slider_item {
+    padding: 20px 12px;
+    gap: 12px;
+  }
+
+  .for_pet_info_title {
+    line-height: normal;
   }
 }

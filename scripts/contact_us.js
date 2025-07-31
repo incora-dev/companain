@@ -3,6 +3,9 @@ function contactUsFormHandler() {
   const formContainer = document.querySelector(".contact_us_form_block");
   const submitButton = formContainer.querySelector(".contact_us_submit_button");
 
+  const emailInput = formContainer.querySelector("#email");
+  emailInput.value = localStorage.getItem("CONTACT_EMAIL") || "";
+
   const requiredInputs = inputsIds.map((selector) =>
     formContainer.querySelector(selector)
   );
@@ -55,6 +58,8 @@ function contactUsFormHandler() {
 
     if (valid) {
       const formData = {};
+
+      localStorage.removeItem("CONTACT_EMAIL");
 
       allTextInputs.forEach((input) => {
         const name = input.name;

@@ -93,3 +93,13 @@
     line-height: var(--Mobile-LH);
   }
 }
+
+@media (max-width: 500px) {
+  .faq_accordion_header {
+    font-size: 22px;
+  }
+
+  .faq_accordion_content p {
+    font-size: 20px;
+  }
+}

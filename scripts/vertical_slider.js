@@ -6,48 +6,35 @@ function forParentSectionSlider() {
     "vertical_slider_track_wrapper"
   );
   const sliderTrack = document.getElementById("vertical_slider_track");
+
   const firstSliderElementHeight = answers?.[0].offsetHeight;
-
   sliderTrackWrapper.style.height = firstSliderElementHeight + "px";
-
-  console.log({ firstSliderElementHeight });
 
   let currentIndex = 0;
   const maxIndex = answers.length - 1;
 
   function scrollToCard(index) {
-    const container = document.querySelector(".vertical_slider_track_wrapper");
     const target = answers[index];
+    if (!target) return;
 
-    if (!target || !container) return;
+    const wrapperRect = sliderTrackWrapper.getBoundingClientRect();
+    const targetRect = target.getBoundingClientRect();
+    const currentScroll =
+      parseFloat(getComputedStyle(sliderTrack).transform.split(",")[5]) || 0;
 
-    const containerHeight = container.offsetHeight;
-    const targetTop = target.offsetTop;
-    const targetHeight = target.offsetHeight;
+    const delta =
+      targetRect.top +
+      target.offsetHeight / 2 -
+      (wrapperRect.top + wrapperRect.height / 2);
 
-    // sliderTrack.style.paddingTop = `${parseInt(containerHeight / 3)}px`;
-
-    const viewportHeight = window.innerHeight;
-    const paddingTop = Math.min(viewportHeight * 0.11, 77);
-    sliderTrack.style.paddingTop = `${parseInt(paddingTop)}px`;
-
-    const scrollOffset = targetTop - containerHeight / 2 + targetHeight / 2;
-    sliderTrack.style.transform = `translateY(-${scrollOffset}px)`;
+    const newScroll = currentScroll - delta;
+    sliderTrack.style.transform = `translateY(${newScroll}px)`;
 
     answers.forEach((card) => card.classList.remove("active"));
     target.classList.add("active");
 
-    if (index <= 0) {
-      arrowUp.style.visibility = "hidden";
-    } else {
-      arrowUp.style.visibility = "visible";
-    }
-
-    if (index >= answers.length - 1) {
-      arrowDown.style.visibility = "hidden";
-    } else {
-      arrowDown.style.visibility = "visible";
-    }
+    arrowUp.style.visibility = index <= 0 ? "hidden" : "visible";
+    arrowDown.style.visibility = index >= maxIndex ? "hidden" : "visible";
   }
 
   function handlePrev() {
@@ -63,7 +50,16 @@ function forParentSectionSlider() {
   arrowUp.addEventListener("click", handlePrev);
   arrowDown.addEventListener("click", handleNext);
 
-  scrollToCard(currentIndex);
+  window.addEventListener("resize", () => {
+    sliderTrackWrapper.style.height = answers[0].offsetHeight + "px";
+    scrollToCard(currentIndex);
+  });
+
+  window.addEventListener("load", () => {
+    requestAnimationFrame(() => {
+      scrollToCard(0);
+    });
+  });
 }
 
 forParentSectionSlider();

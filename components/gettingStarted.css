@@ -169,3 +169,19 @@
     text-align: start;
   }
 }
+
+@media (max-width: 500px) {
+  .cta_section_body {
+    gap: 15px;
+  }
+
+  .cta_section_info {
+    width: 100%;
+  }
+
+  .cta_dog_connect {
+    width: 150px;
+    top: -72px;
+    right: -37px;
+  }
+}

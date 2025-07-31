@@ -370,3 +370,30 @@ label.checkbox_error .custom_checkmark {
     padding: 36px 28px 10px 15px;
   }
 }
+
+@media (max-width: 500px) {
+  .join_beta_modal_body {
+    padding: 0;
+  }
+
+  .logo_section_block_form {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "beta_form_block_1"
+      "beta_form_block_2"
+      "beta_form_block_3"
+      "beta_form_block_4"
+      "beta_form_block_5"
+      "beta_form_block_6";
+  }
+
+  .join_beta_modal_body_form_section {
+    padding: 24px;
+  }
+
+  .logo_section_form_block_title {
+    padding-top: 30px;
+  }
+}

@@ -56,9 +56,16 @@
 }
 
 @media (max-width: 900px) {
+  .about_us_cover_title__container {
+    letter-spacing: normal;
+    font-size: 7vw;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+  .about_us_cover_title__container {
+    font-size: 8vw;
+  }
 }
 /* ======================================================================================================================================================== */
 .our_mission__container {
@@ -154,6 +161,12 @@
 @media (max-width: 800px) {
   .our_mission_title {
     font-size: var(--Mobile-FS);
+  }
+}
+
+@media (max-width: 600px) {
+  .our_mission_title {
+    line-height: normal;
   }
 }
 /* ======================================================================================================================================================== */
@@ -339,9 +352,6 @@
   }
 }
 
-@media (max-width: 900px) {
-}
-
 @media (max-width: 800px) {
   .comp_at_core_body {
     padding: 0;
@@ -364,6 +374,13 @@
     gap: 25px;
   }
 }
+
+@media (max-width: 600px) {
+  .comp_at_core_title {
+    line-height: normal;
+  }
+}
+
 /* ======================================================================================================================================================== */
 .our_team__container {
   position: relative;
@@ -555,10 +572,6 @@
     letter-spacing: normal;
   }
 
-  .our_team_body {
-    padding: 50px 0;
-  }
-
   .our_team_members_list_item {
     padding: 20px 32px 20px 18px;
     gap: 21px;
@@ -631,6 +644,19 @@
     font-size: var(--Mobile-FS);
   }
 }
+
+@media (max-width: 600px) {
+  .our_team_title {
+    line-height: normal;
+  }
+}
+
+@media (max-width: 500px) {
+  .our_team_members_list {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ======================================================================================================================================================== */
 .with_you__container {
   position: relative;
@@ -716,7 +742,7 @@
   backdrop-filter: blur(6px);
 
   position: relative;
-  top: -100px;
+  top: -70px;
   z-index: 1;
 
   height: 560px;

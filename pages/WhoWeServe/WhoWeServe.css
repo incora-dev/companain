@@ -157,6 +157,17 @@
   .cover_body_animal_item__image {
     width: 100%;
   }
+
+  .cover_title__container {
+    font-size: 7.5vw;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover_dna_bg {
+    visibility: hidden;
+  }
 }
 
 /* ======================================================================================================================================================== */
@@ -363,6 +374,8 @@
   gap: 12px;
 
   border-radius: 16px;
+
+  transition: all 400ms ease;
 }
 
 .question_card_text {
@@ -512,6 +525,25 @@
     text-align: center;
   }
 }
+
+@media (max-width: 600px) {
+  .care_with_insight_title {
+    line-height: normal;
+  }
+
+  .question_card {
+    padding: 10px 20px;
+  }
+
+  .question_card:hover {
+    z-index: 5;
+  }
+
+  .question_card_text {
+    font-size: 20px;
+  }
+}
+
 /* ======================================================================================================================================================== */
 .pet_owner_body {
   position: relative;
@@ -684,6 +716,14 @@
       "pet_owner_info_block_4"
       "pet_owner_info_block_5";
   }
+
+  .pet_owner_info_icon_block {
+    align-items: center;
+  }
+  .pet_owner_info_icon_block_title,
+  .pet_owner_info_icon_block_info {
+    text-align: center;
+  }
 }
 /* ======================================================================================================================================================== */
 .the_result_body {
@@ -793,6 +833,13 @@
 
   .the_result_body_title {
     font-size: var(--Mobile-FS);
+    line-height: normal;
+  }
+}
+
+@media (max-width: 800px) {
+  .the_result_body_content_item {
+    padding: 22px;
   }
 }
 
