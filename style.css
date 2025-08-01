@@ -112,6 +112,10 @@
   .hero_subtitle {
     display: none;
   }
+
+  .hero_title__container {
+    letter-spacing: -4px;
+  }
 }
 
 @media (max-width: 600px) {

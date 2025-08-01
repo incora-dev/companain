@@ -544,6 +544,14 @@
   }
 }
 
+@media (max-width: 400px) {
+  .answer_arrow {
+    /* right: 0%;
+    top: 50%; */
+    transform: translate(6%, -100%) rotateZ(14deg) rotateX(180deg) scale(0.75);
+  }
+}
+
 /* ======================================================================================================================================================== */
 .pet_owner_body {
   position: relative;
