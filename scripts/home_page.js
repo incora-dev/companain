@@ -8,27 +8,36 @@ function smarPetAnimations() {
   function switchAcordion(index) {
     const header = headers?.[index];
     const content = header.nextElementSibling;
-    const isOpen = header.classList.contains("active");
-    header.classList.add("active");
+    const parentItem = header.closest(".smart_pet_accordion_item");
+
+    parentItem?.classList.add("active");
+
     content.style.maxHeight = content.scrollHeight + 30 + "px";
-    content.style.paddingTop = 24 + "px";
+    content.style.paddingTop = "24px";
+
     setTimeout(() => {
       smartPetImage.src = `assets/smart_pet_care/image_${index}.png`;
       smartPetImageContainer.classList.add("fade");
     }, 400);
   }
 
-  switchAcordion(0);
+  requestAnimationFrame(() => {
+    switchAcordion(0);
+  });
 
   headers.forEach((header, headerIdx) => {
     header.addEventListener("click", () => {
-      const content = header.nextElementSibling;
-      const isOpen = header.classList.contains("active");
+      const isOpen = header
+        .closest(".smart_pet_accordion_item")
+        ?.classList.contains("active");
 
       headers.forEach((h) => {
-        h.classList.remove("active");
+        const parent = h.closest(".smart_pet_accordion_item");
+        parent?.classList.remove("active");
+
         h.nextElementSibling.style.maxHeight = null;
         h.nextElementSibling.style.paddingTop = 0;
+
         smartPetImageContainer.classList.remove("fade");
       });
 
@@ -38,7 +47,6 @@ function smarPetAnimations() {
     });
   });
 }
-
 function homePageStepsAnimaiton() {
   const ORDER = ["Upload", "Analyze", "Summary", "Advice", "Monitor"];
   const section = document.querySelector(".proactive_steps");

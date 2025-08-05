@@ -37,9 +37,15 @@ body {
   padding-inline: var(--container-inline-padding);
 }
 
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    padding-inline: 18px;
+  }
+}
+
 @media (max-width: 500px) {
   [class*="__container"] {
-    padding-inline: 25px;
+    padding-inline: 20px;
   }
 }
 
@@ -51,13 +57,13 @@ body {
 }
 
 /* sections animation */
-section {
+section:has([class$="__container"]) {
   opacity: 0;
   transform: translateY(75px);
   transition: all 0.75s ease;
 }
 
-section.visible {
+section:has([class$="__container"]).visible {
   opacity: 1;
   transform: translateY(0);
 }

@@ -3,7 +3,7 @@ const feedbacks = [
     rating: 5,
     feedback:
       "CompanAIn helped me understand my dog’s blood test results without any vet jargon. Now I feel confident managing her care!",
-    userPhoto: "./assets/feedbacks_section/users/women.png",
+    userPhoto: "./assets/feedbacks_section/users/woman.png",
     userName: "Emily R.",
     feedbackDate: "05/10/2025",
     userType: "Pet Owner",
@@ -20,8 +20,8 @@ const feedbacks = [
   {
     rating: 5,
     feedback:
-      "I love how easy it is to upload and track all my cats’ health documents in one place.",
-    userPhoto: "./assets/feedbacks_section/users/women.png",
+      "I am able to connect the dots between her medical history and current health. I love how easy it is to upload and track all my cats’ health documents in one place.",
+    userPhoto: "./assets/feedbacks_section/users/woman_2.png",
     userName: "Sofiia L.",
     feedbackDate: "07/10/2025",
     userType: "Pet Owner",

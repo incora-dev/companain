@@ -146,7 +146,7 @@ function betaModalHandler() {
   ]
     .filter(Boolean)
     .forEach((el) => {
-      el.addEventListener("click", () => {
+      el?.addEventListener("click", () => {
         modal.classList.add("open");
         document.body.style.overflow = "hidden";
       });

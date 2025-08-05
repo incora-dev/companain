@@ -8,7 +8,8 @@
 }
 .header__body {
   padding-block: 8px;
-  padding-inline: 16px;
+  padding-inline-start: 16px;
+  padding-inline-end: 8px;
   column-gap: 46px;
   row-gap: 5px;
   border-radius: 30px;
@@ -54,19 +55,23 @@ button#nav_burger:hover > svg {
 .menu__link {
   color: #fff;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .menu__item.close {
   display: none;
 }
-.menu__link:hover,
-.menu__link.active {
-  color: var(--Aquamarine);
+.menu__link:hover {
+  /* color: var(--Aquamarine); */
+  text-decoration: underline;
 }
+.menu__link.active {
+  font-weight: bold;
+}
+
 .actions-header {
   display: flex;
   column-gap: 16px;

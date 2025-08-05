@@ -186,6 +186,10 @@
   gap: 24px;
 }
 
+.footer_download > img {
+  cursor: pointer;
+}
+
 .footer_buttons {
   padding-top: 49px;
 

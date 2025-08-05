@@ -30,3 +30,8 @@ function highlightActivePage() {
 
 highlightActivePage();
 sidebarHandler();
+
+// const logo = document.querySelector(".header__link-logo");
+// logo.addEventListener("click", () => {
+//   alert(`width: ${window.innerWidth}, height: ${window.innerHeight}`);
+// });

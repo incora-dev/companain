@@ -45,6 +45,7 @@
 
 .faq_accordion_arrow {
   transition: transform 0.3s ease;
+  pointer-events: none;
 }
 
 .faq_accordion_header.active {

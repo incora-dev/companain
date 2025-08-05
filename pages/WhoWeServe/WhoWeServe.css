@@ -771,6 +771,8 @@
   flex-direction: column;
   justify-content: space-between;
 
+  color: var(--Black);
+
   gap: 24px;
 
   flex: 1 1 0;
@@ -778,24 +780,35 @@
   border-radius: 16px;
   background: var(--Aquamarine-60);
   backdrop-filter: blur(10px);
+
+  transition: all 0.4s ease;
 }
 
 .the_result_body_content_item_title {
-  color: var(--Black);
+  color: inherit;
 
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+
+  transition: all 0.4s ease;
 }
 
 .the_result_body_content_item_info {
-  color: var(--Black);
+  color: inherit;
 
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+
+  transition: all 0.4s ease;
+}
+
+.the_result_body_content_item:hover {
+  background-color: var(--Purple-Heart);
+  color: var(--White);
 }
 
 @media (max-width: 1000px) {
