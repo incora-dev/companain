@@ -37,9 +37,27 @@ body {
   padding-inline: var(--container-inline-padding);
 }
 
+@media (max-width: 500px) {
+  [class*="__container"] {
+    padding-inline: 25px;
+  }
+}
+
 .page {
   position: relative;
   z-index: 1;
 
   margin-top: -98.5px;
+}
+
+/* sections animation */
+section {
+  opacity: 0;
+  transform: translateY(75px);
+  transition: all 0.75s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

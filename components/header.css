@@ -111,6 +111,8 @@ button#nav_burger:hover > svg {
   .header__body {
     padding: 15px;
     column-gap: 25px;
+
+    /* direction: rtl; */
   }
   .menu__list {
     position: fixed;
