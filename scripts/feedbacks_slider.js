@@ -3,9 +3,9 @@ const feedbacks = [
     rating: 5,
     feedback:
       "CompanAIn helped me understand my dog’s blood test results without any vet jargon. Now I feel confident managing her care!",
-    userPhoto: "./assets/feedbacks_section/users/woman.png",
+    userPhoto: "./assets/feedbacks_section/users/woman_2.png",
     userName: "Emily R.",
-    feedbackDate: "05/10/2025",
+    feedbackDate: "JUN 10, 2025",
     userType: "Pet Owner",
   },
   {
@@ -14,16 +14,16 @@ const feedbacks = [
       "The AI summaries save me time and effort. It’s like having a smart assistant that gives clear insights fast — super helpful in a busy clinic.",
     userPhoto: "./assets/feedbacks_section/users/men.png",
     userName: "Dr. Michael T.",
-    feedbackDate: "06/10/2025",
+    feedbackDate: "MAY 23, 2025",
     userType: "Veterinarian",
   },
   {
     rating: 5,
     feedback:
       "I am able to connect the dots between her medical history and current health. I love how easy it is to upload and track all my cats’ health documents in one place.",
-    userPhoto: "./assets/feedbacks_section/users/woman_2.png",
+    userPhoto: "./assets/feedbacks_section/users/woman.png",
     userName: "Sofiia L.",
-    feedbackDate: "07/10/2025",
+    feedbackDate: "OCT 10, 2024",
     userType: "Pet Owner",
   },
 ];

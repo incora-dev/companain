@@ -65,8 +65,8 @@ button#nav_burger:hover > svg {
   display: none;
 }
 .menu__link:hover {
-  /* color: var(--Aquamarine); */
-  text-decoration: underline;
+  color: var(--Aquamarine);
+  /* text-decoration: underline; */
 }
 .menu__link.active {
   font-weight: bold;

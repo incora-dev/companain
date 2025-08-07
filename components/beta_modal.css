@@ -166,15 +166,21 @@
   gap: 8px;
 }
 
-.checkbox_label {
+.checkbox_label,
+.checkbox_input_label {
   position: relative;
+  width: 100%;
+}
+
+.checkbox_input_label {
+  height: fit-content;
 }
 
 .partner_input {
   display: flex;
   padding: 4px 0px 8px 0px;
 
-  color: var(--Light-Gray);
+  color: var(--Black);
 
   font-size: 18px;
   font-style: normal;
@@ -196,7 +202,7 @@
 }
 
 .input_error::after {
-  content: "This field can’t be empty.";
+  content: attr(data-error);
   color: var(--Red);
   font-family: Inter, sans-serif;
   font-size: 10px;
@@ -288,6 +294,10 @@ label.checkbox_error .custom_checkmark {
   border-radius: 48px;
   background: var(--Purple-Heart);
   font-weight: 700;
+}
+
+.required_field {
+  color: var(--Red);
 }
 
 .modal_paw_container_1,

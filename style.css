@@ -15,6 +15,14 @@
 }
 
 .hero_title__container {
+  container-type: inline-size;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_title__container > h2 {
   position: relative;
   z-index: 1;
   max-inline-size: 1450px;
@@ -25,14 +33,19 @@
   letter-spacing: -9.5px;
 
   font-weight: 700;
-  font-size: clamp(65px, 11vw, 156px);
-  letter-spacing: -7.8px;
-  line-height: 156px; /* 125px */
+  letter-spacing: -3.8px;
+  line-height: 156px;
   text-transform: uppercase;
   text-wrap: nowrap;
   text-align: center;
 
   overflow: clip;
+}
+
+@container (min-width: 300px) {
+  .hero_title__container > h2 {
+    font-size: 11cqw;
+  }
 }
 
 .hero-image {
@@ -43,6 +56,8 @@
   transform: translateX(-50.15%);
 
   pointer-events: none;
+
+  width: 800px;
 }
 
 .hero_background_section__item {
@@ -118,6 +133,13 @@
   }
 }
 
+@media (max-width: 800px) {
+  .hero-image {
+    transform: translateX(-51.15%) translateY(15%) scale(0.7);
+    margin-top: -175px;
+  }
+}
+
 @media (max-width: 600px) {
   .hero_title__container {
     font-size: 10vw;
@@ -125,8 +147,8 @@
   }
 
   .hero-image {
-    transform: translateX(-51.15%) translateY(15%) scale(0.7);
-    margin-top: -175px;
+    transform: translateX(-51.15%) translateY(15%) scale(0.5);
+    margin-bottom: -75px;
   }
 }
 
@@ -467,50 +489,51 @@
 
 .health_icons {
   transition: all 0.3s ease;
+  width: 72px;
 }
 
 .health_icons:hover {
-  transform: scale(1.2);
+  transform: scale(1.75);
 }
 
 .img_circle_1 {
-  top: 130px;
-  right: 30px;
+  top: 165px;
+  right: 50px;
 }
 
 .img_circle_2 {
-  bottom: 130px;
+  bottom: 155px;
   right: 80px;
 }
 
 .img_circle_3 {
-  bottom: 55px;
-  left: 50px;
+  bottom: 85px;
+  left: 70px;
 }
 
 .img_circle_4 {
-  top: 230px;
-  left: 23px;
+  top: 243px;
+  left: 40px;
 }
 
 .img_circle_5 {
-  top: 15px;
-  left: 175px;
+  top: 17px;
+  left: 200px;
 }
 
 .img_circle_6 {
-  right: 145px;
-  top: 185px;
+  right: 164px;
+  top: 205px;
 }
 
 .img_circle_7 {
-  bottom: 140px;
-  right: 240px;
+  bottom: 165px;
+  right: 260px;
 }
 
 .img_circle_8 {
-  top: 110px;
-  left: 260px;
+  top: 130px;
+  left: 278px;
 }
 
 .health_label {
@@ -1081,26 +1104,29 @@
   z-index: 2;
 
   padding: 42px 0;
+
+  container-type: inline-size;
 }
 
 .raising_standart_title {
   color: var(--Black);
-
-  font-size: 125px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: -10px;
-
-  display: inline-block;
+  letter-spacing: -0.625vw;
   width: 100%;
-  text-align: center;
-
+  text-align: justify;
   position: relative;
-
   z-index: 1;
-  top: 52px;
+  top: 38px;
+
+  text-wrap: nowrap;
+}
+
+@container (min-width: 300px) {
+  .raising_standart_title {
+    font-size: 9.7cqw;
+  }
 }
 
 .raising_standart_video_wrapper {
@@ -1124,18 +1150,19 @@
 
 @media (max-width: 1000px) {
   .raising_standart_title {
-    font-size: var(--Tablet-FS);
-    letter-spacing: normal;
     top: 0px;
   }
 }
 
 @media (max-width: 800px) {
   .raising_standart_title {
-    font-size: calc(var(--Mobile-FS) - 3px);
-    line-height: 0.85;
-    top: 2px;
-    letter-spacing: normal;
+    top: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .raising_standart_title {
+    text-wrap: wrap;
   }
 }
 
@@ -1374,7 +1401,7 @@
 
   border-radius: 24px;
 
-  background: rgba(69, 225, 167, 0.6);
+  background: var(--Aquamarine);
 
   color: var(--Black);
 
@@ -1384,6 +1411,9 @@
   line-height: 72px;
   letter-spacing: -4px;
   text-transform: uppercase;
+
+  position: relative;
+  z-index: 1;
 }
 
 .footsteps_scrolling_section {
@@ -1491,16 +1521,12 @@
   right: 0;
 
   transform: rotate(10deg);
-
-  z-index: 3;
 }
 .paws_container_2 {
   bottom: 70px;
   right: 290px;
 
   transform: rotate(-24deg);
-
-  z-index: 3;
 }
 .paws_container_3 {
   bottom: 304px;
@@ -1508,6 +1534,17 @@
 
   transform: rotate(25deg);
 }
+
+.paws_container_1,
+.paws_container_2,
+.paws_container_4,
+.paws_container_5,
+.paws_container_6,
+.paws_container_7,
+.paws_container_8 {
+  z-index: 3;
+}
+
 .paws_container_4 {
   bottom: 286px;
   right: 620px;
@@ -1855,7 +1892,7 @@
   letter-spacing: -4px;
   text-transform: uppercase;
 
-  padding-bottom: 75px;
+  padding-bottom: 25px;
 }
 
 .feedback_section_body {
@@ -1956,6 +1993,8 @@
   display: flex;
   align-items: center;
   gap: 15px;
+
+  font-size: 22px;
 }
 
 .feedback_date {
@@ -1974,7 +2013,7 @@
 
   color: rgba(0, 0, 0, 0.5);
 
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;

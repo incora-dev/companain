@@ -3,3 +3,31 @@
 @import url("../../css/container.css");
 
 /* ======================================================================================================================================================== */
+.resources_cover {
+  background: var(--Gradient);
+  padding-top: 82px;
+}
+
+.resources_cover__container {
+  position: relative;
+}
+
+.resources_cover_title {
+  color: var(--White);
+
+  font-size: 112.128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112.128px;
+  letter-spacing: -5.606px;
+  text-transform: uppercase;
+}
+
+.resources_cover_bg {
+  position: relative;
+  bottom: 100px;
+  left: -65px;
+  z-index: 3;
+}
+
+/* ======================================================================================================================================================== */

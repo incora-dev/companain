@@ -8,7 +8,15 @@ function forParentSectionSlider() {
   const sliderTrack = document.getElementById("vertical_slider_track");
 
   const firstSliderElementHeight = answers?.[0].offsetHeight;
-  sliderTrackWrapper.style.height = firstSliderElementHeight + "px";
+
+  const divider = window.location.href.includes("WhoWeServe")
+    ? firstSliderElementHeight
+    : 2;
+
+  sliderTrackWrapper.style.height =
+    firstSliderElementHeight +
+    Math.round(firstSliderElementHeight / divider) +
+    "px";
 
   let currentIndex = 0;
   const maxIndex = answers.length - 1;

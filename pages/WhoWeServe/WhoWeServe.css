@@ -742,6 +742,8 @@
 
   position: relative;
   z-index: 2;
+
+  container-type: inline-size;
 }
 
 .the_result_body_title {
@@ -755,6 +757,12 @@
   text-transform: uppercase;
 
   text-align: center;
+}
+
+@container (min-width: 300px) {
+  .the_result_body_title {
+    font-size: 11.7cqw;
+  }
 }
 
 .the_result_body_content {
@@ -962,7 +970,7 @@
     letter-spacing: normal;
   }
   .vets_focused_on_medicine_body {
-    padding: 60px 0 0 0;
+    padding: 60px 0;
     flex-direction: column;
   }
 }

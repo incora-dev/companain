@@ -30,12 +30,14 @@ ul {
   list-style-type: disc;
 }
 
-a {
+.policy_body a,
+.terms_body a {
   color: #0077cc;
   text-decoration: none;
 }
 
-a:hover {
+.policy_body a:hover,
+.terms_body a:hover {
   text-decoration: underline;
 }
 

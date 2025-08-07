@@ -67,3 +67,8 @@ section:has([class$="__container"]).visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+[class$="_blur"],
+[class$="_blur_"] {
+  pointer-events: none;
+}

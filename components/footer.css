@@ -56,6 +56,14 @@
   gap: 21px;
 }
 
+.footer_socials a svg rect {
+  transition: all 0.4s ease;
+}
+
+.footer_socials a svg:hover rect {
+  fill: var(--Aquamarine);
+}
+
 .footer_social_license {
   color: var(--White-50);
 
@@ -92,6 +100,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
+
+  transition: all 0.4s ease;
+}
+
+.company_link:hover {
+  color: var(--Aquamarine);
 }
 
 .footer_connect {

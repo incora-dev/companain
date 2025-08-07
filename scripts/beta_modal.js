@@ -2,6 +2,7 @@ function betaFormHandler() {
   const inputsIds = ["#full_name", "#email"];
   const formContainer = document.querySelector(".logo_section_block_form");
   const submitButton = document.querySelector(".beta_form_submit_btn");
+  submitButton.disabled = true;
 
   const requiredInputs = inputsIds.map((selector) =>
     formContainer.querySelector(selector)
@@ -24,39 +25,57 @@ function betaFormHandler() {
     ios_btn.classList.remove("active");
   });
 
-  let hasTriedToSubmit = false;
-
   function validateForm() {
     let isValid = true;
 
     requiredInputs.forEach((input) => {
       const label = input.closest(".input_label");
+      label.classList.remove("input_error");
+      label.removeAttribute("data-error");
 
       if (!input.value.trim()) {
         label.classList.add("input_error");
+        label.setAttribute("data-error", "This field can’t be empty.");
         isValid = false;
-      } else {
-        label.classList.remove("input_error");
+      } else if (input.type === "email") {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(input.value.trim())) {
+          label.classList.add("input_error");
+          label.setAttribute("data-error", "Invalid email");
+          isValid = false;
+        }
       }
     });
 
+    // if (!agreementCheckbox.checked) {
+    //   checkboxWrapper.classList.add("checkbox_error");
+    //   isValid = false;
+    // } else {
+    //   checkboxWrapper.classList.remove("checkbox_error");
+    // }
+
     if (!agreementCheckbox.checked) {
+      checkboxWrapper.classList.add("input_error");
       checkboxWrapper.classList.add("checkbox_error");
+      checkboxWrapper.setAttribute(
+        "data-error",
+        "Please confirm that you have read the Privacy Policy and Terms & Conditions"
+      );
       isValid = false;
     } else {
+      checkboxWrapper.classList.remove("input_error");
       checkboxWrapper.classList.remove("checkbox_error");
+      checkboxWrapper.removeAttribute("data-error");
     }
+
+    submitButton.disabled = !isValid;
 
     return isValid;
   }
 
   [...requiredInputs, agreementCheckbox].forEach((input) => {
-    input.addEventListener("input", () => {
-      if (hasTriedToSubmit) validateForm();
-    });
-    input.addEventListener("change", () => {
-      if (hasTriedToSubmit) validateForm();
-    });
+    input.addEventListener("input", validateForm);
+    input.addEventListener("change", validateForm);
   });
 
   submitButton.addEventListener("click", (e) => {
@@ -237,7 +256,7 @@ function injectBetaModal() {
               </label>
               <label style="grid-area: beta_form_block_2" class="input_label">
                 <div>Email Adress <span class="required_field">*</span></div>
-                <input placeholder="johnpaw@email.com" class="partner_input" type="text" name="email" id="email">
+                <input placeholder="johnpaw@email.com" class="partner_input" type="email" name="email" id="email">
               </label>
               <label style="grid-area: beta_form_block_3" class="input_label">
                 <div>Platform</div>
@@ -251,7 +270,7 @@ function injectBetaModal() {
                 <div>Why are you interested?</div>
                 <input placeholder="Tell us a few words…" class="partner_input" type="text" name="interest" id="interest_reason">
               </label>
-              <label style="grid-area: beta_form_block_6">
+              <label style="grid-area: beta_form_block_6" class="checkbox_input_label">
                 <input type="checkbox" class="custom_checkbox" />
                 <span class="custom_checkmark">
                   <svg class="checkbox_icon" width="16" height="16" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
