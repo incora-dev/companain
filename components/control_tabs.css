@@ -1,0 +1,60 @@
+.control_tabs_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding-block: 40px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.control_tab_item {
+  padding: 12px 22px;
+
+  color: var(--Black);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  border-radius: 32px;
+  border: 1px solid var(--Black);
+
+  transition: color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease,
+    box-shadow 0.3s ease;
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+}
+
+.control_tab_item.active {
+  color: var(--White);
+  background-color: var(--Onyx);
+  font-weight: 600;
+}
+
+.control_tab_content {
+  display: none;
+  animation: fade 0.3s ease-in-out;
+}
+
+.control_tab_content.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

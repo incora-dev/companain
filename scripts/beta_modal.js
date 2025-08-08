@@ -47,13 +47,6 @@ function betaFormHandler() {
       }
     });
 
-    // if (!agreementCheckbox.checked) {
-    //   checkboxWrapper.classList.add("checkbox_error");
-    //   isValid = false;
-    // } else {
-    //   checkboxWrapper.classList.remove("checkbox_error");
-    // }
-
     if (!agreementCheckbox.checked) {
       checkboxWrapper.classList.add("input_error");
       checkboxWrapper.classList.add("checkbox_error");

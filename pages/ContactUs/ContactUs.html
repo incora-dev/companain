@@ -91,125 +91,128 @@
                 <div class="contact_us_info_block">
                   <div class="contact_us_info_block_title">Contact Us</div>
                   <div class="contact_us_info_block_subtitle">
-                    <b
-                      >Discover how CompanAIn can support your veterinary
-                      practice.</b
-                    >
+                    <b> Discover how CompanAIn can support you. </b>
                     <br />
                     <br />
-                    Fill out the form, and a member of our team will reach out
-                    to you shortly to explore how we can work together.
+                    Fill out the form, and a member of our team will get in
+                    touch shortly — whether you're a vet or a pet owner, we’re
+                    here to help and answer any questions you may have about the
+                    app.
                   </div>
                 </div>
                 <div class="contact_us_form_block">
-                  <label
-                    style="grid-area: contact_us_form_block_1"
-                    class="input_label"
-                  >
-                    <div>Full Name <span class="required_field">*</span></div>
-                    <input
-                      placeholder="John Paw"
-                      class="contact_us_input"
-                      type="text"
-                      name="name"
-                      id="full_name"
-                    />
-                  </label>
-                  <label
-                    style="grid-area: contact_us_form_block_2"
-                    class="input_label"
-                  >
-                    <div>
-                      Email Address <span class="required_field">*</span>
+                  <div class="control_tabs_body">
+                    <div class="control_tab_item active" data-tab="owners">
+                      Pet Owners
                     </div>
-                    <input
-                      placeholder="john.paw@email.com"
-                      class="contact_us_input"
-                      type="text"
-                      name="email"
-                      id="email"
-                    />
-                  </label>
-                  <label
-                    style="grid-area: contact_us_form_block_3"
-                    class="input_label"
-                  >
-                    <div>Role <span class="required_field">*</span></div>
-                    <input
-                      placeholder="Veterinarian"
-                      class="contact_us_input"
-                      type="text"
-                      name="role"
-                      id="role"
-                    />
-                  </label>
-                  <label
-                    style="grid-area: contact_us_form_block_4"
-                    class="input_label"
-                  >
-                    <div>
-                      Company Name <span class="required_field">*</span>
+                    <div class="control_tab_item" data-tab="vets">
+                      Veterinarians
                     </div>
-                    <input
-                      placeholder="CompanAIn"
-                      class="contact_us_input"
-                      type="text"
-                      name="company"
-                      id="company"
-                    />
-                  </label>
-                  <label
-                    style="grid-area: contact_us_form_block_5"
-                    class="input_label"
-                  >
-                    <div>Why are you interested?</div>
-                    <input
-                      placeholder="Tell us a few words…"
-                      class="contact_us_input"
-                      type="text"
-                      name="interest"
-                      id="interest_reason"
-                    />
-                  </label>
-                  <label style="grid-area: contact_us_form_block_6">
-                    <input type="checkbox" class="custom_checkbox" />
-                    <span class="custom_checkmark">
-                      <svg
-                        class="checkbox_icon"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 18 17"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.41 9.24L5.66 12.51L15.24 3.07"
-                          fill="none"
-                          stroke="#6137CD"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    <span class="checkbox_label">
-                      I agree to the
-                      <a href="../../pages/Policy/PrivacyPolicy.html"
-                        >Privacy Policy</a
-                      >
-                      and
-                      <a href="../../pages/Policy/TermsAndConditions.html"
-                        >Terms & Conditions</a
-                      >
-                      and consent to participate in the beta.
-                    </span>
-                  </label>
-                  <div
-                    style="grid-area: contact_us_form_block_7"
-                    class="contact_us_submit_button_wrapper"
-                  >
-                    <button class="contact_us_submit_button">
-                      Let’s Partner!
-                    </button>
+                  </div>
+                  <div class="contact_us_form">
+                    <label class="input_label">
+                      <div>Full Name <span class="required_field">*</span></div>
+                      <input
+                        placeholder="John Paw"
+                        class="contact_us_input"
+                        type="text"
+                        name="name"
+                        id="full_name"
+                      />
+                    </label>
+                    <label class="input_label">
+                      <div>
+                        Email Address <span class="required_field">*</span>
+                      </div>
+                      <input
+                        placeholder="john.paw@email.com"
+                        class="contact_us_input"
+                        type="text"
+                        name="email"
+                        id="email"
+                      />
+                    </label>
+                    <div
+                      class="control_tab_content"
+                      id="vets"
+                      style="grid-column: 1 / span 2"
+                    >
+                      <div class="vets_field_wrapper">
+                        <label class="input_label">
+                          <div>Role <span class="required_field">*</span></div>
+                          <input
+                            placeholder="Veterinarian"
+                            class="contact_us_input"
+                            type="text"
+                            name="role"
+                            id="role"
+                          />
+                        </label>
+                        <label class="input_label">
+                          <div>
+                            Company Name <span class="required_field">*</span>
+                          </div>
+                          <input
+                            placeholder="CompanAIn"
+                            class="contact_us_input"
+                            type="text"
+                            name="company"
+                            id="company"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <label style="grid-column: 1 / span 2" class="input_label">
+                      <div>Why are you interested?</div>
+                      <input
+                        placeholder="Tell us a few words…"
+                        class="contact_us_input"
+                        type="text"
+                        name="interest"
+                        id="interest_reason"
+                      />
+                    </label>
+                    <label
+                      style="grid-column: 1 / span 2"
+                      class="checkbox_input_label"
+                    >
+                      <input type="checkbox" class="custom_checkbox" />
+                      <span class="custom_checkmark">
+                        <svg
+                          class="checkbox_icon"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 18 17"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.41 9.24L5.66 12.51L15.24 3.07"
+                            fill="none"
+                            stroke="#6137CD"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkbox_label">
+                        I agree to the
+                        <a href="../../pages/Policy/PrivacyPolicy.html"
+                          >Privacy Policy</a
+                        >
+                        and
+                        <a href="../../pages/Policy/TermsAndConditions.html"
+                          >Terms & Conditions</a
+                        >
+                        and consent to participate in the beta.
+                      </span>
+                    </label>
+                    <div
+                      style="grid-column: 1 / span 2"
+                      class="contact_us_submit_button_wrapper"
+                    >
+                      <button class="contact_us_submit_button">Submit</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -446,5 +449,6 @@
     <script src="../../scripts/footer.js" defer></script>
     <script src="../../scripts/sectionAppearanceAnimation.js" defer></script>
     <script src="../../scripts/contact_us.js" defer></script>
+    <script src="../../scripts/control_tabs.js" defer></script>
   </body>
 </html>
