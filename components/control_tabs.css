@@ -58,3 +58,15 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 500px) {
+  .control_tabs_body {
+    padding-block: 20px;
+    gap: 10px;
+  }
+
+  .control_tab_item {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
