@@ -185,7 +185,9 @@
   }
 
   .vertical_slider_info_title {
+    font-weight: var(--Mobile-FW);
     font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
   }
 
   .vertical_slider_info {
@@ -196,15 +198,25 @@
   .vertical_slider_item_a {
     font-size: 20px;
   }
+
+  .vertical_slider_info_subtitle {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 600px) {
   .vertical_slider_item {
-    padding: 20px 12px;
+    padding: 40px 12px;
     gap: 12px;
   }
 
   .vertical_slider_info_title {
     line-height: normal;
+    text-align: left;
+  }
+
+  .vertical_slider_info_subtitle {
+    font-size: var(--Mobile-Body-FS);
+    line-height: var(--Mobile-Body-LH);
   }
 }

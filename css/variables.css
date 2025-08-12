@@ -10,8 +10,9 @@
   --Aquamarine-60: rgba(69, 225, 167, 0.6);
   --Purple-Heart: #6137cd;
   --Black: #000;
-  --White: #fff;
   --Red: #d74b4b;
+  --White: #fff;
+  --White-1: #f5f5f5;
   --White-50: rgba(255, 255, 255, 0.5);
   --Onyx: #121212;
   --Gray: rgba(0, 0, 0, 0.54);
@@ -25,6 +26,8 @@
   );
   --Mobile-FS: 50px;
   --Mobile-FW: 500;
-  --Mobile-LH: 72px;
+  --Mobile-LH: normal;
   --Tablet-FS: 70px;
+  --Mobile-Body-FS: 20px;
+  --Mobile-Body-LH: 28px;
 }
