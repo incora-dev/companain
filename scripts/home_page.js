@@ -80,9 +80,6 @@ function homePageStepsAnimaiton() {
 function stickyHomePageSection() {
   if (window.innerWidth > 900) {
     const section = document.querySelector(".footsteps_section");
-    const stickyContainer = document.querySelector(
-      ".footsteps_section__container"
-    );
     const scrollable = document.querySelector(
       ".footsteps_scrolling_section_middle"
     );

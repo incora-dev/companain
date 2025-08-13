@@ -89,7 +89,7 @@
 .vertical_slider_track_wrapper_track {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 
   transition: transform 0.3s ease;
 }
@@ -196,7 +196,7 @@
 
   .vertical_slider_item_q,
   .vertical_slider_item_a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .vertical_slider_info_subtitle {

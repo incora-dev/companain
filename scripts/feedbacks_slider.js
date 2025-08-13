@@ -46,10 +46,10 @@ function renderFeedbackCards(feedbacks) {
     const ratingContainer = document.createElement("div");
     ratingContainer.classList.add("feedback_rating");
     for (let i = 0; i < item.rating; i++) {
-      const star = document.createElement("object");
-      star.setAttribute("type", "image/svg+xml");
-      star.setAttribute("data", "assets/feedbacks_section/rating.svg");
-      ratingContainer.appendChild(star);
+      const rating_circle = document.createElement("img");
+      rating_circle.setAttribute("src", "assets/feedbacks_section/rating.svg");
+      rating_circle.setAttribute("alt", "rating");
+      ratingContainer.appendChild(rating_circle);
     }
 
     // Feedback text

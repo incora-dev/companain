@@ -26,6 +26,7 @@ class PulsationButton extends HTMLElement {
                             z-index: 3;
                             border: none;
                             cursor: pointer;
+                            text-wrap: nowrap;
 
                             transition: background-color 0.3s ease;
                           }

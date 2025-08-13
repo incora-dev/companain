@@ -76,6 +76,10 @@
   opacity: 1;
 }
 
+/* .cover_body_animal_item:first-child {
+  opacity: 1;
+} */
+
 .cover_body_animal_item__image {
   height: auto;
   object-fit: cover;
@@ -159,14 +163,25 @@
   }
 
   .cover_title__container {
-    font-size: 7.5vw;
     letter-spacing: normal;
+    line-height: normal;
+    text-wrap: wrap;
   }
 }
 
 @media (max-width: 600px) {
   .cover_dna_bg {
     visibility: hidden;
+  }
+
+  .cover_top_col_subtitle_block .cover_body_animal_item {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .cover_title__container {
+    font-size: 15cqw;
   }
 }
 
@@ -224,67 +239,6 @@
 .control_tabs_blur_right_4 {
   top: 2650px;
   right: -350px;
-}
-
-.control_tabs_body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  padding-block: 40px;
-
-  position: relative;
-  z-index: 2;
-}
-
-.control_tab_item {
-  padding: 12px 22px;
-
-  color: var(--Black);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-
-  border-radius: 32px;
-  border: 1px solid var(--Black);
-
-  transition: color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease,
-    box-shadow 0.3s ease;
-
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  }
-}
-
-.control_tab_item.active {
-  color: var(--White);
-  background-color: var(--Onyx);
-  font-weight: 600;
-}
-
-.control_tab_content {
-  display: none;
-  animation: fade 0.3s ease-in-out;
-}
-
-.control_tab_content.active {
-  display: block;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ======================================================================================================================================================== */
@@ -529,6 +483,7 @@
 @media (max-width: 600px) {
   .care_with_insight_title {
     line-height: normal;
+    text-align: left;
   }
 
   .question_card {
@@ -540,7 +495,14 @@
   }
 
   .question_card_text {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .care_info_section_asking,
+  .care_info_section_arrow,
+  .care_info_section_title {
+    font-size: var(--Mobile-Body-FS);
+    line-height: var(--Mobile-Body-LH);
   }
 }
 
@@ -731,6 +693,8 @@
   .pet_owner_info_icon_block_title,
   .pet_owner_info_icon_block_info {
     text-align: center;
+    font-size: var(--Mobile-Body-FS);
+    line-height: var(--Mobile-Body-LH);
   }
 }
 /* ======================================================================================================================================================== */
@@ -759,9 +723,9 @@
   text-align: center;
 }
 
-@container (min-width: 300px) {
+@container (min-width: 200px) {
   .the_result_body_title {
-    font-size: 11.7cqw;
+    font-size: 11.5cqw;
   }
 }
 
@@ -855,7 +819,7 @@
   }
 
   .the_result_body_content_item {
-    padding: 80px 20px 20px 20px;
+    padding: 22px;
 
     gap: 20px;
   }
@@ -866,9 +830,15 @@
   }
 }
 
-@media (max-width: 800px) {
-  .the_result_body_content_item {
-    padding: 22px;
+@media (max-width: 600px) {
+  .the_result_body_title {
+    text-align: left;
+  }
+
+  .the_result_body_content_item_info {
+    text-align: left;
+    font-size: var(--Mobile-Body-FS);
+    line-height: var(--Mobile-Body-LH);
   }
 }
 
