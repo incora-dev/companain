@@ -1,0 +1,120 @@
+.proactive_steps {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+}
+
+.proactive_steps.large {
+  row-gap: 24px;
+}
+
+.proactive_steps_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.proactive_steps.large .proactive_steps_wrapper {
+  gap: 32px;
+}
+
+.proactive_steps_section_tags {
+  border-radius: 40px;
+  background: transparent;
+  border: 2px solid var(--Black);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  padding: 8px 24px;
+  color: var(--Black);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  transition: background 0.7s ease, color 0.7s ease;
+}
+
+.proactive_steps.large .proactive_steps_section_tags {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.proactive_steps_section_tags_large_title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: color 0.7s ease;
+}
+
+.proactive_steps_section_tags_desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  transition: color 0.7s ease;
+}
+
+.proactive_steps_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.3;
+  transition: opacity 0.7s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.proactive_steps.large .proactive_steps_item {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 30%;
+}
+
+/* Active state: only set background+color on parent */
+.proactive_steps_item.active {
+  opacity: 1;
+}
+
+.proactive_steps_item.active .proactive_steps_section_tags {
+  background: var(--Black);
+  color: var(--White);
+}
+
+.proactive_steps_item.active .proactive_steps_section_tags_desc {
+  color: var(--White-50);
+}
+
+.proactive_steps_section_arrow_up {
+  transform: rotateX(180deg);
+  position: absolute;
+  right: -45%;
+  top: -45%;
+}
+
+.proactive_steps_section_arrow_down {
+  position: absolute;
+  right: -45%;
+  bottom: -45%;
+}
+
+.proactive_steps.large .proactive_steps_section_arrow_down {
+  right: -15%;
+  bottom: 30%;
+}
+
+.proactive_steps.large .proactive_steps_section_arrow_up {
+  right: -15%;
+  top: 30%;
+}
+
+@media (max-width: 800px) {
+  .proactive_steps {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 450px) {
+  .proactive_steps {
+    transform: scale(0.6);
+  }
+}

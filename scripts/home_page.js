@@ -47,35 +47,6 @@ function smarPetAnimations() {
     });
   });
 }
-function homePageStepsAnimaiton() {
-  const ORDER = ["Upload", "Analyze", "Summary", "Advice", "Monitor"];
-  const section = document.querySelector(".proactive_steps");
-
-  function animateSteps() {
-    ORDER.forEach((label, idx) => {
-      const item = document.querySelector(
-        `.proactive_steps_item [data-label="${label}"]`
-      )?.parentElement;
-      if (item) {
-        setTimeout(() => item.classList.add("active"), idx * 1500);
-      }
-    });
-  }
-
-  const obs = new IntersectionObserver(
-    ([entry], o) => {
-      if (entry.isIntersecting) {
-        animateSteps();
-        o.unobserve(section);
-      }
-    },
-    {
-      threshold: 0.4,
-    }
-  );
-
-  obs.observe(section);
-}
 
 function stickyHomePageSection() {
   if (window.innerWidth > 900) {
@@ -121,5 +92,4 @@ function stickyHomePageSection() {
 }
 
 smarPetAnimations();
-homePageStepsAnimaiton();
 stickyHomePageSection();
