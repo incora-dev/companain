@@ -12,6 +12,8 @@
 
 .about_us_cover__container {
   position: relative;
+
+  padding-inline: 0;
 }
 
 .about_us_cover_title__container {
@@ -55,7 +57,12 @@
   transform: scale(1.3);
 }
 
-@media (max-width: 1000px) {
+.about_us_cover_bg_mobile {
+  display: none;
+
+  width: 100%;
+
+  object-fit: contain;
 }
 
 @media (max-width: 900px) {
@@ -71,6 +78,28 @@
     line-height: normal;
     font-size: 15cqw;
   }
+
+  .about_us_cover_bg {
+    display: none;
+  }
+
+  .about_us_cover_bg_mobile {
+    display: block;
+  }
+
+  .about_us_cover_body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .about_us_cover_bg {
+    display: none;
+  }
+
+  .about_us_cover_bg_mobile {
+    display: block;
+  }
 }
 
 /* ======================================================================================================================================================== */
@@ -83,7 +112,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 195px 0;
+  padding: 205px 0;
 
   position: relative;
 
@@ -149,7 +178,6 @@
   .our_mission_body {
     flex-direction: column;
     gap: 20px;
-    padding: 195px 0;
   }
 
   .our_mission_description {
@@ -187,6 +215,18 @@
     line-height: normal;
     text-align: left;
     padding: 0;
+  }
+
+  .about_us_figure {
+    width: 80%;
+    left: -35%;
+    top: 38%;
+  }
+}
+
+@media (max-width: 450px) {
+  .our_mission_body {
+    padding: 125px 0 55px 0;
   }
 }
 /* ======================================================================================================================================================== */
@@ -931,10 +971,6 @@
 }
 
 @media (max-width: 600px) {
-  .with_you_circles_wrapper {
-    width: 90%;
-  }
-
   .with_you_blur_green {
     top: -300px;
   }
@@ -1198,9 +1234,6 @@ label.checkbox_error .custom_checkmark {
   }
 }
 
-@media (max-width: 900px) {
-}
-
 @media (max-width: 800px) {
   .partner_with_us_banner {
     padding: 80px 24px;
@@ -1215,6 +1248,21 @@ label.checkbox_error .custom_checkmark {
   .partners_submit_button {
     padding: 10px 24px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .partner_with_us_form {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "partner_form_block_1"
+      "partner_form_block_2"
+      "partner_form_block_3"
+      "partner_form_block_4"
+      "partner_form_block_5"
+      "partner_form_block_6"
+      "partner_form_block_7";
   }
 }
 /* ======================================================================================================================================================== */

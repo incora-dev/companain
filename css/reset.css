@@ -70,6 +70,10 @@ body {
   block-size: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 b {
   font-weight: 600;
 }

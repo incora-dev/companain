@@ -220,3 +220,14 @@
     line-height: var(--Mobile-Body-LH);
   }
 }
+
+@media (max-width: 450px) {
+  .vertical_slider_item {
+    padding: 32px 12px;
+  }
+
+  .vertical_slider_item_q,
+  .vertical_slider_item_a {
+    font-size: 16px;
+  }
+}

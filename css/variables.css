@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --font-family: "Inter";
   --font-sans: sans-serif;
@@ -7,6 +9,7 @@
   --container-inline-padding: 15px;
 
   --Aquamarine: #45e1a7;
+  --Aquamarine-1: #dcfde8;
   --Aquamarine-60: rgba(69, 225, 167, 0.6);
   --Purple-Heart: #6137cd;
   --Black: #000;
@@ -18,6 +21,8 @@
   --Gray: rgba(0, 0, 0, 0.54);
   --Light-Blur: rgba(234, 234, 234, 0.45);
   --Light-Gray: rgba(0, 0, 0, 0.24);
+  --Light-Gray-1: rgba(0, 0, 0, 0.5);
+  --Light-Gray-2: rgba(0, 0, 0, 0.7);
   --Gradient: linear-gradient(180deg, #cbbdf3 12.97%, #dcfde8 87.48%);
   --Who-We-Serve-Gradient: linear-gradient(
     109deg,

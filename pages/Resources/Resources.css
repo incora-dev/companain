@@ -474,6 +474,11 @@
   flex-grow: 1;
 }
 
+.articles_list_item,
+.top_article_item {
+  cursor: pointer;
+}
+
 @media (max-width: 850px) {
   .articles_list_items_wrapper {
     display: grid;

@@ -487,14 +487,15 @@
   }
 
   .question_card {
-    padding: 10px 20px;
+    padding: 13px 15.5px;
   }
 
   .question_card:hover {
     z-index: 5;
   }
 
-  .question_card_text {
+  .question_card_text,
+  .question_card_date {
     font-size: 16px;
   }
 
@@ -506,11 +507,42 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .answer_arrow {
-    /* right: 0%;
-    top: 50%; */
-    transform: translate(6%, -100%) rotateZ(14deg) rotateX(180deg) scale(0.75);
+    transform: translate(6%, -85%) rotateZ(14deg) rotateX(180deg) scale(0.75);
+  }
+
+  .question_card {
+    gap: 7.5px;
+  }
+
+  .care_cards_section {
+    height: 480px;
+  }
+
+  .question_card_text {
+    font-size: 14px;
+  }
+
+  .question_card_date {
+    font-size: 10px;
+  }
+
+  .question_card:nth-child(1) {
+    top: 5px;
+  }
+
+  .question_card:nth-child(2) {
+    top: 105px;
+  }
+
+  .question_card:nth-child(3) {
+    bottom: 130px;
+    width: 65%;
+  }
+
+  .question_card:nth-child(4) {
+    bottom: 30px;
   }
 }
 
@@ -945,9 +977,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .vets_focused_on_medicine_body_info_title {
     font-size: var(--Mobile-FS);
+    line-height: var(--Mobile-LH);
+    font-weight: var(--Mobile-FW);
+
+    text-align: start;
   }
 }
 /* ======================================================================================================================================================== */

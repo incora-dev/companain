@@ -73,3 +73,11 @@ section:has([class$="__container"]).visible {
 [class$="_blur_"] {
   pointer-events: none;
 }
+
+.hide {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
