@@ -1,3 +1,7 @@
+.control_tabs {
+  position: relative;
+}
+
 .control_tabs_body {
   display: flex;
   align-items: center;
